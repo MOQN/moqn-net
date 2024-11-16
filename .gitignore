@@ -21,7 +21,6 @@ node_modules/
 .env.* 
 
 # Gatsby files
-.DS_Store
 .gatsby/
 gatsby-*.lock
 
@@ -47,51 +46,3 @@ Thumbs.db
 coverage/
 *.snap
 jest-test-results.json# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Runtime data
-.pnp/
-.pnp.js
-
-# Build outputs
-public/
-.cache/
-
-# Dependency directories
-node_modules/
-
-# Environment variables
-.env
-.env.* 
-
-# Gatsby files
-.DS_Store
-.gatsby/
-gatsby-*.lock
-
-# IDE-specific files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# System files
-Thumbs.db
-*.iml
-
-# MacOS files
-.DS_Store
-
-# Misc
-*.gz
-*.zip
-*.map
-
-# Test-related files
-coverage/
-*.snap
-jest-test-results.json
