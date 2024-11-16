@@ -11,9 +11,8 @@
   --maxWidth-lg: 32rem;
   --maxWidth-xl: 36rem;
   --maxWidth-2xl: 40rem;
-  --maxWidth-3xl: 46rem;
-  --maxWidth-4xl: 52rem;
-  --maxWidth-5xl: 60rem;
+  --maxWidth-3xl: 44rem;
+  --maxWidth-4xl: 48rem;
   --maxWidth-full: "100%";
   --spacing-px: "1px";
   --spacing-0: 0;
@@ -62,9 +61,9 @@
   --color-heading: #1a202c;
   --color-heading-black: black;
   --color-accent: #536493;
-  --wrapper-maxWidth: var(--maxWidth-5xl);
-  --wrapper-padding: var(--spacing-20);
-  --post-gap: var(--spacing-5);
+  --wrapper-maxWidth: 55rem;
+  --wrapper-padding: 2.5rem;
+  --post-gap: 1.3rem;
   --rounded-corner: 0.5rem;
 }
 
@@ -257,7 +256,7 @@ a:focus {
 .global-wrapper {
   margin: 0 auto;
   max-width: var(--wrapper-maxWidth);
-  padding: var(--wrapper-padding);
+  padding: calc(var(--wrapper-padding) * 2) var(--wrapper-padding);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
