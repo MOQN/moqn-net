@@ -1,22 +1,97 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+.pnp/
+.pnp.js
+
+# Build outputs
+public/
+.cache/
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+.env.* 
+
+# Gatsby files
+.DS_Store
+.gatsby/
+gatsby-*.lock
+
+# IDE-specific files
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+.idea/
+*.swp
+*.swo
+
+# System files
+Thumbs.db
+*.iml
+
+# MacOS files
+.DS_Store
+
+# Misc
+*.gz
+*.zip
+*.map
+
+# Test-related files
+coverage/
+*.snap
+jest-test-results.json# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+.pnp/
+.pnp.js
+
+# Build outputs
+public/
+.cache/
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+.env.* 
+
+# Gatsby files
+.DS_Store
+.gatsby/
+gatsby-*.lock
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+Thumbs.db
+*.iml
+
+# MacOS files
+.DS_Store
+
+# Misc
+*.gz
+*.zip
+*.map
+
+# Test-related files
+coverage/
+*.snap
+jest-test-results.json
