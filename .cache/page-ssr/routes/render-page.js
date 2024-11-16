@@ -1850,7 +1850,7 @@ var plugins = [{
     "feeds": [{
       "query": "{\n              allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {\n                nodes {\n                  excerpt\n                  html\n                  fields {\n                    slug\n                  }\n                  frontmatter {\n                    title\n                    date\n                  }\n                }\n              }\n            }",
       "output": "/rss.xml",
-      "title": "Gatsby Starter Blog RSS Feed"
+      "title": "MOQN | RSS Feed"
     }]
   }
 }, {
@@ -1858,12 +1858,12 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr.js */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "name": "Gatsby Starter Blog",
-    "short_name": "Gatsby",
+    "name": "MOON Portfolio",
+    "short_name": "MOQN",
     "start_url": "/",
     "background_color": "#ffffff",
     "display": "minimal-ui",
-    "icon": "src/images/gatsby-icon.png",
+    "icon": "src/images/icon.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",

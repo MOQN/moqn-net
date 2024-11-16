@@ -84,9 +84,9 @@ const Layout = ({
     "data-is-root-path": isRootPath
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", {
     className: "global-header"
-  }, header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, "\xA9 ", new Date().getFullYear(), ", Built with", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://www.gatsbyjs.com"
-  }, "Gatsby")));
+  }, header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, "\xA9 ", new Date().getFullYear(), ", ", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://www.moqn.net"
+  }, "MOQN"), ". ", ` `, "All rights reserved."));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
 
@@ -161,7 +161,7 @@ const Seo = ({
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Gatsby Starter Blog","description":"A starter blog demonstrating what Gatsby can do.","social":{"twitter":"kylemathews"}}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Moon.","description":"MOQN | Portfolio Website","social":{"twitter":"none"}}}}}');
 
 /***/ })
 

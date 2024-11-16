@@ -26,7 +26,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, {` `}
-        <a href="https://www.moqn.net">MOQN</a>. {` `}
+        <a href="https://www.moonjunghyun.com/">MOQN</a>. {` `}
         All rights reserved.
 
       </footer>

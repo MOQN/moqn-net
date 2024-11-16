@@ -5,11 +5,11 @@ var plugins = [{
     },{
       name: 'gatsby-plugin-feed',
       plugin: require('/Users/MOQN/Dropbox/_Github/moqn-net/node_modules/gatsby-plugin-feed/gatsby-ssr.js'),
-      options: {"plugins":[],"query":"\n          {\n            site {\n              siteMetadata {\n                title\n                description\n                siteUrl\n                site_url: siteUrl\n              }\n            }\n          }\n        ","feeds":[{"query":"{\n              allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {\n                nodes {\n                  excerpt\n                  html\n                  fields {\n                    slug\n                  }\n                  frontmatter {\n                    title\n                    date\n                  }\n                }\n              }\n            }","output":"/rss.xml","title":"Gatsby Starter Blog RSS Feed"}]},
+      options: {"plugins":[],"query":"\n          {\n            site {\n              siteMetadata {\n                title\n                description\n                siteUrl\n                site_url: siteUrl\n              }\n            }\n          }\n        ","feeds":[{"query":"{\n              allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {\n                nodes {\n                  excerpt\n                  html\n                  fields {\n                    slug\n                  }\n                  frontmatter {\n                    title\n                    date\n                  }\n                }\n              }\n            }","output":"/rss.xml","title":"MOQN | RSS Feed"}]},
     },{
       name: 'gatsby-plugin-manifest',
       plugin: require('/Users/MOQN/Dropbox/_Github/moqn-net/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
-      options: {"plugins":[],"name":"Gatsby Starter Blog","short_name":"Gatsby","start_url":"/","background_color":"#ffffff","display":"minimal-ui","icon":"src/images/gatsby-icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"},
+      options: {"plugins":[],"name":"MOON Portfolio","short_name":"MOQN","start_url":"/","background_color":"#ffffff","display":"minimal-ui","icon":"src/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"},
     },{
       name: 'default-site-plugin',
       plugin: require('/Users/MOQN/Dropbox/_Github/moqn-net/gatsby-ssr.js'),

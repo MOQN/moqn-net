@@ -863,9 +863,7 @@ const Bio = () => {
     quality: 95,
     alt: "Profile picture",
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2536747328.json */ "./.cache/caches/gatsby-plugin-image/2536747328.json")
-  }), (author === null || author === void 0 ? void 0 : author.name) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, "Written by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("strong", null, author.name), " ", (author === null || author === void 0 ? void 0 : author.summary) || null, ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("a", {
-    href: `https://twitter.com/${(social === null || social === void 0 ? void 0 : social.twitter) || ``}`
-  }, "You should follow them on Twitter")));
+  }), (author === null || author === void 0 ? void 0 : author.name) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("strong", null, author.name), " ", ` `, (author === null || author === void 0 ? void 0 : author.summary) || null, ` `));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Bio);
 
@@ -911,9 +909,9 @@ const Layout = ({
     "data-is-root-path": isRootPath
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", {
     className: "global-header"
-  }, header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, "\xA9 ", new Date().getFullYear(), ", Built with", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://www.gatsbyjs.com"
-  }, "Gatsby")));
+  }, header), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, "\xA9 ", new Date().getFullYear(), ", ", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://www.moqn.net"
+  }, "MOQN"), ". ", ` `, "All rights reserved."));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
 
@@ -1015,34 +1013,33 @@ const BlogIndex = ({
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
       location: location,
       title: siteTitle
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_bio__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "No blog posts found."));
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "No blog posts found."));
   }
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     location: location,
     title: siteTitle
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_bio__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ol", {
-    style: {
-      listStyle: `none`
-    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "post-list-container"
   }, posts.map(post => {
     const title = post.frontmatter.title || post.fields.slug;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-      key: post.fields.slug
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("article", {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: post.fields.slug,
       className: "post-list-item",
       itemScope: true,
-      itemType: "http://schema.org/Article"
+      itemType: "http://schema.org/CreativeWork"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
       to: post.fields.slug,
       itemProp: "url"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-      itemProp: "headline"
-    }, title))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("small", null, post.frontmatter.date)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+      itemProp: "name"
+    }, title))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("small", {
+      itemProp: "dateCreated"
+    }, post.frontmatter.date)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
       dangerouslySetInnerHTML: {
         __html: post.frontmatter.description || post.excerpt
       },
       itemProp: "description"
-    }))));
+    })));
   })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BlogIndex);
@@ -1065,7 +1062,7 @@ const pageQuery = "3100300281";
   \***********************************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"layout":"fixed","backgroundColor":"#f8f8f8","images":{"fallback":{"src":"/static/6dacf7b2c4db85249eda1745ffb570ed/e5610/profile-pic.png","srcSet":"/static/6dacf7b2c4db85249eda1745ffb570ed/e5610/profile-pic.png 50w,\\n/static/6dacf7b2c4db85249eda1745ffb570ed/e9b55/profile-pic.png 100w","sizes":"50px"},"sources":[{"srcSet":"/static/6dacf7b2c4db85249eda1745ffb570ed/d4bf4/profile-pic.avif 50w,\\n/static/6dacf7b2c4db85249eda1745ffb570ed/ee81f/profile-pic.avif 100w","type":"image/avif","sizes":"50px"},{"srcSet":"/static/6dacf7b2c4db85249eda1745ffb570ed/3faea/profile-pic.webp 50w,\\n/static/6dacf7b2c4db85249eda1745ffb570ed/6a679/profile-pic.webp 100w","type":"image/webp","sizes":"50px"}]},"width":50,"height":50}');
+module.exports = JSON.parse('{"layout":"fixed","backgroundColor":"#c8c8c8","images":{"fallback":{"src":"/static/98de8470f47a09d51c69e35f8b6c963d/e5610/profile-pic.png","srcSet":"/static/98de8470f47a09d51c69e35f8b6c963d/e5610/profile-pic.png 50w,\\n/static/98de8470f47a09d51c69e35f8b6c963d/e9b55/profile-pic.png 100w","sizes":"50px"},"sources":[{"srcSet":"/static/98de8470f47a09d51c69e35f8b6c963d/d4bf4/profile-pic.avif 50w,\\n/static/98de8470f47a09d51c69e35f8b6c963d/ee81f/profile-pic.avif 100w","type":"image/avif","sizes":"50px"},{"srcSet":"/static/98de8470f47a09d51c69e35f8b6c963d/3faea/profile-pic.webp 50w,\\n/static/98de8470f47a09d51c69e35f8b6c963d/6a679/profile-pic.webp 100w","type":"image/webp","sizes":"50px"}]},"width":50,"height":50}');
 
 /***/ }),
 
@@ -1075,7 +1072,7 @@ module.exports = JSON.parse('{"layout":"fixed","backgroundColor":"#f8f8f8","imag
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Gatsby Starter Blog","description":"A starter blog demonstrating what Gatsby can do.","social":{"twitter":"kylemathews"}}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Moon.","description":"MOQN | Portfolio Website","social":{"twitter":"none"}}}}}');
 
 /***/ }),
 
@@ -1085,7 +1082,7 @@ module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Gatsby St
   \***********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":{"name":"Kyle Mathews","summary":"who lives and works in San Francisco building useful things."},"social":{"twitter":"kylemathews"}}}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":{"name":"J.H. Moon","summary":"Educator, Creative Coder"},"social":{"twitter":"none"}}}}}');
 
 /***/ })
 

@@ -14,8 +14,8 @@ module.exports = {
       name: `J.H. Moon`,
       summary: `Educator, Creative Coder`,
     },
-    description: `MOQN | Portfolio Website`,
-    siteUrl: `https://www.moqn.net`,
+    description: `MOQN | Portfolio`,
+    siteUrl: `https://www.moonjunghyun.com/`,
     social: {
       twitter: `none`,
     },
@@ -118,7 +118,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
   ],
