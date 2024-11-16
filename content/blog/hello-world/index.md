@@ -1,7 +1,9 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
+keywords: Interactive Installation
 description: "Hello World"
+image: "./main.jpg"
 ---
 
 This is my first post on my new fake blog! How exciting!

@@ -11,10 +11,10 @@ module.exports = {
   siteMetadata: {
     title: `Moon.`,
     author: {
-      name: `J.H. Moon`,
+      name: `Moon, Jung Hyun`,
       summary: `Educator, Creative Coder`,
     },
-    description: `MOQN | Portfolio`,
+    description: `Moon | Portfolio`,
     siteUrl: `https://www.moonjunghyun.com/`,
     social: {
       twitter: `none`,
@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
         name: `blog`,
+        path: `${__dirname}/content/blog`,
       },
     },
     {
@@ -110,8 +110,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `MOON Portfolio`,
-        short_name: `MOQN`,
+        name: `Portfolio | Moon`,
+        short_name: `Moon.`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

@@ -65,6 +65,7 @@
   --wrapper-maxWidth: var(--maxWidth-5xl);
   --wrapper-padding: var(--spacing-20);
   --post-gap: var(--spacing-5);
+  --rounded-corner: 0.5rem;
 }
 
 
@@ -235,6 +236,11 @@ table thead tr th {
   border-bottom: 1px solid var(--color-accent);
 }
 
+img,
+pre {
+  border-radius: var(--rounded-corner);
+}
+
 /* Link */
 
 a {
@@ -283,8 +289,7 @@ a:focus {
   background-color: #EEE;
   width: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
   height: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
-
-  border-radius: 0.5rem;
+  border-radius: var(--rounded-corner);
   padding: var(--spacing-6);
 }
 
@@ -349,6 +354,12 @@ a:focus {
 
 footer {
   text-align: center;
+}
+
+/* Gatsby Syntax highlighting */
+
+.gatsby-highlight {
+  margin-bottom: var(--spacing-8);
 }
 
 /* Media queries */

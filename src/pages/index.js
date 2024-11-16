@@ -31,16 +31,29 @@ const BlogIndex = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <div key={post.fields.slug} className="post-list-item" itemScope itemType="http://schema.org/CreativeWork">
+            <div
+              key={post.fields.slug}
+              className="post-list-item"
+              itemScope
+              itemType="http://schema.org/CreativeWork"
+              style={{
+                backgroundImage: `url(${post.frontmatter.image.childImageSharp.gatsbyImageData.images.fallback.src})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+            >
               <header>
                 <h2>
                   <Link to={post.fields.slug} itemProp="url">
                     <span itemProp="name">{title}</span>
                   </Link>
                 </h2>
-                {/* <small itemprop="author">Moon</p> */}
                 <small itemProp="dateCreated">
                   {post.frontmatter.date}
+                </small>
+                <br />
+                <small itemProp="dateCreated">
+                  {post.frontmatter.keywords}
                 </small>
               </header>
               <section>
@@ -84,7 +97,13 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          keywords
           description
+          image {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED),
+            }
+          }
         }
       }
     }
