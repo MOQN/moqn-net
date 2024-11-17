@@ -1,15 +1,72 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from "react";
+import { Link, graphql } from "gatsby";
 
-// import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 const PostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
-  const siteTitle = site.siteMetadata?.title || `Title`
+  const siteTitle = site.siteMetadata?.title || `Title`;
+
+  const processDate = (date) => {
+    if (date.includes(",")) {
+      // Split string into an array by commas
+      const dateArray = date.split(",").map((d) => d.trim()); // Remove extra spaces
+
+      // Map through the array to format each date
+      return dateArray
+        .map((d, index) => {
+          const formattedDate = formatDate(d);
+          if (index === dateArray.length - 2) {
+            // Add "and" before the second-to-last date
+            return `${formattedDate} and`;
+          } else if (index < dateArray.length - 2) {
+            // Add a comma for all other dates except the last
+            return `${formattedDate},`;
+          }
+          return formattedDate; // Last date, no punctuation
+        })
+        .join(" "); // Combine the mapped strings with spaces
+    } else if (typeof date === "string" && date.includes(" to ")) {
+      // Handle date ranges (e.g., "YYYY-MM-DD to YYYY-MM-DD")
+      const [start, end] = date.split(" to ");
+      return `${formatDate(start)} - ${formatDate(end)}`;
+    } else {
+      // Single date case
+      return formatDate(date);
+    }
+  };
+
+  const formatDate = (date) => {
+    const monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+
+    const parts = date.split("-");
+    const year = parts[0];
+    const monthIndex = parseInt(parts[1], 10) - 1; // Convert month to zero-based index
+    const day = parts[2];
+
+    const monthName = monthNames[monthIndex];
+
+    if (day === "00") {
+      return `${monthName} ${year}`; // Omit day
+    }
+    return `${monthName} ${day}, ${year}`;
+  };
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -20,16 +77,15 @@ const PostTemplate = ({
       >
         <header>
           <h1 itemProp="name">{post.frontmatter.title}</h1>
-          <p itemProp="dateCreated">{post.frontmatter.date}</p>
+          <p itemProp="dateCreated">{processDate(post.frontmatter.date)}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="description"
         />
         <hr />
-        <footer>
-          {/* <Bio /> */}
-        </footer>
+
+        <footer></footer>
       </article>
       <nav className="post-nav">
         <ul
@@ -58,8 +114,8 @@ const PostTemplate = ({
         </ul>
       </nav>
     </Layout>
-  )
-}
+  );
+};
 
 export const Head = ({ data: { markdownRemark: post } }) => {
   return (
@@ -67,10 +123,10 @@ export const Head = ({ data: { markdownRemark: post } }) => {
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
     />
-  )
-}
+  );
+};
 
-export default PostTemplate
+export default PostTemplate;
 
 export const pageQuery = graphql`
   query PostBySlug(
@@ -89,7 +145,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date
         description
       }
     }

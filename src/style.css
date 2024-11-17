@@ -235,9 +235,16 @@ table thead tr th {
   border-bottom: 1px solid var(--color-accent);
 }
 
+iframe,
 img,
 pre {
   border-radius: var(--rounded-corner);
+}
+
+iframe,
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Link */

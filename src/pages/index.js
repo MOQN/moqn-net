@@ -17,9 +17,6 @@ const PostIndex = ({ data, location }) => {
         {/* <Bio /> */}
         <p>
           No posts found.
-          {/* Add markdown posts to "content/posts" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js). */}
         </p>
       </Layout>
     )
@@ -56,17 +53,20 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { featured: { ne: false } } }
+    ) {
       nodes {
         excerpt
         fields {
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+
           title
-          keywords
           description
+          keywords
+          featured
           image {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED),
@@ -77,3 +77,6 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// sort: { frontmatter: { date: DESC } } // in allMarkdownRemark
+// date(formatString: "MMMM DD, YYYY") // in frontmatter

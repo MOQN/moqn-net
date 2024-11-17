@@ -7,7 +7,6 @@ import { projectBox } from "./ProjectBox.module.css";
 const ProjectBox = ({ project }) => {
   const { title, date, keywords, description, excerpt, slug, image } = {
     title: project.frontmatter.title,
-    date: project.frontmatter.date,
     keywords: project.frontmatter.keywords,
     description: project.frontmatter.description,
     excerpt: project.excerpt,
@@ -31,17 +30,15 @@ const ProjectBox = ({ project }) => {
         <h2>
           <span itemProp="name">{title}</span>
         </h2>
-        <small itemProp="dateCreated">{date}</small>
-        <br />
-        <small itemProp="keywords">{keywords}</small>
+        <p itemProp="keywords">{keywords}</p>
       </header>
       <section>
-        <p
+        {/* <p
           dangerouslySetInnerHTML={{
             __html: description || excerpt,
           }}
           itemProp="description"
-        />
+        /> */}
       </section>
     </Link>
   );
@@ -51,7 +48,6 @@ ProjectBox.propTypes = {
   project: PropTypes.shape({
     frontmatter: PropTypes.shape({
       title: PropTypes.string.isRequired,
-      date: PropTypes.string.isRequired,
       keywords: PropTypes.string,
       description: PropTypes.string,
       image: PropTypes.shape({
