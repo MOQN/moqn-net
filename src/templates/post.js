@@ -16,15 +16,15 @@ const PostTemplate = ({
       <article
         className="post"
         itemScope
-        itemType="http://schema.org/Article"
+        itemType="http://schema.org/CreativeWork"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <h1 itemProp="name">{post.frontmatter.title}</h1>
+          <p itemProp="dateCreated">{post.frontmatter.date}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
+          itemProp="description"
         />
         <hr />
         <footer>

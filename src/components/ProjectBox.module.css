@@ -1,23 +1,65 @@
-.project-box {
-  background-color: #EEE;
+.projectBox {
+  background-color: #eee;
   width: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
   height: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
   border-radius: var(--rounded-corner);
   padding: var(--spacing-6);
+  text-decoration: none;
+  /* Remove underline from Link */
+  color: inherit;
+  /* Ensure text color is not overridden */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  /* Needed for hover effect */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* Smooth hover effects */
 }
 
-.project-box p {
+.projectBox:hover {
+  transform: scale(1.05);
+  /* Slight zoom-in effect */
+  background-color: rgba(0, 255, 255, 0.7);
+  /* Dark translucent background */
+  background-blend-mode: overlay;
+  /* Blend background color with image */
+}
+
+.projectBox:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Dark overlay effect */
+  z-index: 1;
+  /* Ensure it is behind text */
+  border-radius: var(--rounded-corner);
+  /* Match border radius */
+}
+
+.projectBox h2,
+.projectBox p {
+  z-index: 2;
+  /* Ensure text appears above overlay */
+  color: #fff;
+  /* Change text color on hover for visibility */
+}
+
+.projectBox header {
+  margin-bottom: var(--spacing-4);
+}
+
+.projectBox p {
   margin-bottom: var(--spacing-0);
   font-size: 0.6rem;
 }
 
-.project-box h2 {
+.projectBox h2 {
   font-size: var(--fontSize-4);
-  color: var(--color-primary);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
-}
-
-.project-box header {
-  margin-bottom: var(--spacing-4);
 }

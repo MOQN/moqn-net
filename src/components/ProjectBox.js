@@ -16,9 +16,9 @@ const ProjectBox = ({ project }) => {
   };
 
   return (
-    <div
-      key={slug}
-      className={projectBox}
+    <Link
+      to={slug}
+      className={projectBox} // Add projectBox class for styling
       itemScope
       itemType="http://schema.org/CreativeWork"
       style={{
@@ -29,9 +29,7 @@ const ProjectBox = ({ project }) => {
     >
       <header>
         <h2>
-          <Link to={slug} itemProp="url">
-            <span itemProp="name">{title}</span>
-          </Link>
+          <span itemProp="name">{title}</span>
         </h2>
         <small itemProp="dateCreated">{date}</small>
         <br />
@@ -45,7 +43,7 @@ const ProjectBox = ({ project }) => {
           itemProp="description"
         />
       </section>
-    </div>
+    </Link>
   );
 };
 

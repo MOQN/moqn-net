@@ -43,6 +43,7 @@ Thumbs.db
 *.map
 
 # Test-related files
+__test__/
 coverage/
 *.snap
 jest-test-results.json# Logs
