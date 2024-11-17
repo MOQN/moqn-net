@@ -60,8 +60,11 @@ const PostTemplate = ({
     const day = parts[2];
 
     const monthName = monthNames[monthIndex];
-
-    if (day === "00") {
+    // lower case 
+    if (date.toLowerCase() === "present") {
+      return "Present";
+    }
+    else if (day === "00") {
       return `${monthName} ${year}`; // Omit day
     }
     return `${monthName} ${day}, ${year}`;
