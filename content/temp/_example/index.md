@@ -3,7 +3,7 @@ title: Hello World
 date: "2020-12-21"
 description: "Hello World"
 keywords: Interactive Installation
-image: "./images/_main.jpg"
+image: "./images/thumb.jpg"
 featured: false
 ---
 

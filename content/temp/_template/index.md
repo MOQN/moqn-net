@@ -3,7 +3,7 @@ title: Project Title
 date: "2015-05-28" # YYYY-MM-DD or YYYY-MM-DD to YYYY-MM-DD or YYYY-MM-DD, YYYY-MM-DD, YYYY-MM-DD
 description: (Custom description)
 keywords: Interactive Installation
-image: "./images/_main.jpg"
+image: "./images/thumb.jpg"
 featured: false
 ---
 

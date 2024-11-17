@@ -279,6 +279,11 @@ a:focus {
   font-size: var(--fontSize-3);
   font-family: var(--font-heading);
   margin: 0;
+  transition: color 0.5s ease;
+}
+
+.main-heading:hover {
+  color: var(--color-primary);
 }
 
 /* Home page */
@@ -295,11 +300,16 @@ a:focus {
 /* each Post page */
 
 .header-link-home {
-  font-weight: var(--fontWeight-bold);
   font-family: var(--font-heading);
   font-size: var(--fontSize-2);
   text-decoration: none;
   text-align: right;
+  transition: color 0.5s ease;
+}
+
+.header-link-home:hover {
+  color: black;
+
 }
 
 /* I don't use the bio */

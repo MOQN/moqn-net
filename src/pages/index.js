@@ -31,7 +31,9 @@ const PostIndex = ({ data, location }) => {
           <ProjectBox key={project.fields.slug} project={project} />
         ))}
       </div>
-
+      <p style={{ color: "#AAA", textAlign: "center" }}>
+        The projects have been reorganized for application purposes. Further details will be updated soon.
+      </p>
       {/* <Bio /> */}
     </Layout>
   )
