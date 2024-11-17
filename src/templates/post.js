@@ -79,12 +79,18 @@ const PostTemplate = ({
       >
         <header>
           <h1 itemProp="name">{post.frontmatter.title}</h1>
-          <p itemProp="dateCreated">{processDate(post.frontmatter.date)}</p>
+          <p itemProp="dateCreated">
+            <span itemProp="description">{post.frontmatter.description}</span>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <span itemProp="dateCreated">{processDate(post.frontmatter.date)} </span>
+          </p>
         </header>
+
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="description"
         />
+
         <hr />
 
         <footer></footer>

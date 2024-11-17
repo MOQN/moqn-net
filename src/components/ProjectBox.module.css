@@ -21,11 +21,9 @@
 
 .projectBox:hover {
   transform: scale(1.03);
-  /* Slight zoom-in effect */
-  background-color: rgb(0, 255, 191);
-  /* Light translucent background */
+  /* background-color: rgb(0, 255, 191); */
+  background-color: rgb(200, 200, 150);
   background-blend-mode: overlay;
-  /* Blend background color with image */
 }
 
 .projectBox::before {
@@ -55,6 +53,7 @@
 
 .projectBox h2,
 .projectBox p {
+  text-align: left;
   position: relative;
   opacity: 0;
   /* Hidden by default */

@@ -52,6 +52,13 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-external-links`,
+            options: {
+              target: `New Window`,
+              rel: `noopener noreferrer`,
+            },
+          },
           `gatsby-remark-prismjs`,
         ],
       },

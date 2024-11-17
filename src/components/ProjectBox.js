@@ -30,9 +30,15 @@ const ProjectBox = ({ project }) => {
         <h2>
           <span itemProp="name">{title}</span>
         </h2>
-        <p itemProp="keywords">{keywords}</p>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: description || excerpt,
+          }}
+          itemProp="description"
+        />
       </header>
       <section>
+        {/* <p itemProp="keywords">{keywords}</p> */}
         {/* <p
           dangerouslySetInnerHTML={{
             __html: description || excerpt,

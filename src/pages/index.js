@@ -56,7 +56,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { frontmatter: { featured: { ne: false } } }
+      filter: { frontmatter: { featured: { eq: true } } }
     ) {
       nodes {
         excerpt
