@@ -1,21 +1,23 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from "react";
+import { graphql } from "gatsby";
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+// import Bio from "../components/Bio"
+import Layout from "../components/Layout";
+import Seo from "../components/seo";
+import ProjectBox from "../components/ProjectBox";
 
-const BlogIndex = ({ data, location }) => {
+const PostIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const projects = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
+  // if there are no posts, display a message
+  if (projects.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
         {/* <Bio /> */}
         <p>
-          No blog posts found.
-          {/* Add markdown posts to "content/blog" (or the
+          No posts found.
+          {/* Add markdown posts to "content/posts" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
           gatsby-config.js). */}
         </p>
@@ -23,56 +25,22 @@ const BlogIndex = ({ data, location }) => {
     )
   }
 
+  // if there are posts, display them in a grid
   return (
-    <Layout location={location} title={siteTitle}>
-      {/* <Bio /> */}
-      <div className="post-list-container">
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
 
-          return (
-            <div
-              key={post.fields.slug}
-              className="post-list-item"
-              itemScope
-              itemType="http://schema.org/CreativeWork"
-              style={{
-                backgroundImage: `url(${post.frontmatter.image.childImageSharp.gatsbyImageData.images.fallback.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}
-            >
-              <header>
-                <h2>
-                  <Link to={post.fields.slug} itemProp="url">
-                    <span itemProp="name">{title}</span>
-                  </Link>
-                </h2>
-                <small itemProp="dateCreated">
-                  {post.frontmatter.date}
-                </small>
-                <br />
-                <small itemProp="dateCreated">
-                  {post.frontmatter.keywords}
-                </small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: post.frontmatter.description || post.excerpt,
-                  }}
-                  itemProp="description"
-                />
-              </section>
-            </div>
-          )
-        })}
+    <Layout location={location} title={siteTitle}>
+      <div className="project-grid">
+        {projects.map(project => (
+          <ProjectBox key={project.fields.slug} project={project} />
+        ))}
       </div>
+
+      {/* <Bio /> */}
     </Layout>
   )
 }
 
-export default BlogIndex
+export default PostIndex
 
 /**
  * Head export to define metadata for the page

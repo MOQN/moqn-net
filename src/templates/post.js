@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogPostTemplate = ({
+const PostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
@@ -14,7 +14,7 @@ const BlogPostTemplate = ({
   return (
     <Layout location={location} title={siteTitle}>
       <article
-        className="blog-post"
+        className="post"
         itemScope
         itemType="http://schema.org/Article"
       >
@@ -31,7 +31,7 @@ const BlogPostTemplate = ({
           {/* <Bio /> */}
         </footer>
       </article>
-      <nav className="blog-post-nav">
+      <nav className="post-nav">
         <ul
           style={{
             display: `flex`,
@@ -70,10 +70,10 @@ export const Head = ({ data: { markdownRemark: post } }) => {
   )
 }
 
-export default BlogPostTemplate
+export default PostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
+  query PostBySlug(
     $id: String!
     $previousPostId: String
     $nextPostId: String

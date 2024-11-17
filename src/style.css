@@ -276,36 +276,12 @@ a:focus {
 
 /* Home page */
 
-.post-list-container {
+.project-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--post-gap);
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-16) var(--spacing-0);
-}
-
-.post-list-item {
-  background-color: #EEE;
-  width: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
-  height: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
-  border-radius: var(--rounded-corner);
-  padding: var(--spacing-6);
-}
-
-.post-list-item p {
-  margin-bottom: var(--spacing-0);
-  font-size: 0.6rem;
-}
-
-.post-list-item h2 {
-  font-size: var(--fontSize-4);
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
-}
-
-.post-list-item header {
-  margin-bottom: var(--spacing-4);
 }
 
 
@@ -338,16 +314,16 @@ a:focus {
 }
 */
 
-.blog-post header h1 {
+.post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
 
-.blog-post header p {
+.post header p {
   font-size: var(--fontSize-2);
   font-family: var(--font-heading);
 }
 
-.blog-post-nav ul {
+.post-nav ul {
   margin: var(--spacing-0);
 }
 

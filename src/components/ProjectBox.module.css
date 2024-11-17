@@ -1,0 +1,23 @@
+.project-box {
+  background-color: #EEE;
+  width: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
+  height: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
+  border-radius: var(--rounded-corner);
+  padding: var(--spacing-6);
+}
+
+.project-box p {
+  margin-bottom: var(--spacing-0);
+  font-size: 0.6rem;
+}
+
+.project-box h2 {
+  font-size: var(--fontSize-4);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-2);
+  margin-top: var(--spacing-0);
+}
+
+.project-box header {
+  margin-bottom: var(--spacing-4);
+}
