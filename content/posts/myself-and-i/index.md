@@ -45,12 +45,19 @@ The performance took place in the 1st-floor gallery space of YUZ Museum, which w
 ### Figures and Visualizations
 
 ![Image](./images/myself-and-i-001.jpg)
+
 ![Image](./images/myself-and-i-002.jpg)
+
 ![Image](./images/myself-and-i-003.jpg)
+
 ![Image](./images/myself-and-i-004.jpg)
+
 ![Image](./images/myself-and-i-005.jpg)
+
 ![Image](./images/myself-and-i-006.jpg)
+
 ![Image](./images/myself-and-i-007.jpg)
+
 ![Image](./images/myself-and-i-008.jpg)
 
 #### Space/Equipment Simulation in 3D
@@ -60,6 +67,7 @@ The performance took place in the 1st-floor gallery space of YUZ Museum, which w
 #### Finalized Installation Plan
 
 ![Image](./images/myself-and-i-010.jpg)
+
 ![Image](./images/myself-and-i-011.jpg)
 
 #### Real-time visualization of abstract body figures
@@ -71,18 +79,23 @@ The point cloud data of the performer was visualized with 0.5 million particles 
 
 Performer memories were abstractly illustrated in 3D space with 0.8 million particles.
 ![Image](./images/myself-and-i-013.png)
+
 ![Image](./images/myself-and-i-014.png)
+
 ![Image](./images/myself-and-i-015.png)
 
 #### Real-time Visualization of "Memory in Different Times"
 
 Performer appearances processed in real-time via BodyPix.
 ![Image](./images/myself-and-i-016.jpg)
+
 ![Image](./images/myself-and-i-017.jpg)
+
 ![Image](./images/myself-and-i-018.jpg)
 
 #### Visualization of "Speculation"
 
 Integrated lights and mirrors enhanced choreography in a dark room.
 ![Image](./images/myself-and-i-019.jpg)
+
 ![Image](./images/myself-and-i-020.jpg)
