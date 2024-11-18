@@ -20,9 +20,15 @@ featured: true
 
 ### Project Description
 
-- Inspired by _Shan Hai Jing_ (Classic of Mountains and Seas), a Chinese classic of mythical geography and beasts.
-- Combines semi-immersive video and media art with dance and interactive technology.
-- Features real-time motion tracking and interactive avatars mimicking dancer movements.
+The project was premiered in 2019 China Shanghai International Arts Festival as “The Rising Artists’ Works”.
+
+Drawing on the worldview of Shan Hai Jing (Classic of Mountains and Seas), a Chinese classic text of mythic geography and beasts, we instill contemporary, philosophical contemplations into a newly conceived story. Against the mythical backdrop is the idea of “avatar,” or modes of “alter-being,” through which we elaborate the inner journey of human beings’ coming to terms with the unknown: the birthing of life, the struggle for survival, the revelation via love, hate, and fear, and the ultimate transcendence and release with inner peace.
+
+If the mythical world filled with Eastern totemic symbols represent the birthing of the unknown, the “beasts” that are the “alter-beings” of humans render visually our inner complexes. This piece combines semi-immersive space design with multi-medial visuals to let the audience inhabit the “unknown” and experience their “alter-beings” with the dancers, as we journey into the mysteries of life.
+
+In correspondence, the digital media design features technological “avatars” by way of motion capture, interactive animation, and remote control, linking backstage manipulation with front stage performance. With these all-permeating technological “avatars” as metaphorical “alter-beings,” the performance also embodies the merge between modern technology and traditional arts.
+
+> Features real-time motion tracking and interactive avatars mimicking dancer movements.
 
 ### Contributions
 
