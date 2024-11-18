@@ -4,7 +4,7 @@ date: "2020-12-21"
 description: (Custom description)
 keywords: Interactive Installation
 image: "./images/thumb.jpg"
-featured: false
+featured: true
 ---
 
 <iframe width="800" height="450" src="//www.youtube.com/embed/EWHcW4i7lKY?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
