@@ -50,10 +50,6 @@ I designed creatures inspired by Shan Hai Jing to represent abstract ideas and e
 
 I managed real-time media control through Arena Resolume to ensure smooth transitions and effects. I worked closely with designers, programmers, and the sound team to integrate visuals, choreography, and music. Special focus was given to synchronizing soundscapes with visual elements to create a unified experience.
 
-### Result & Recognition
-
-The project was well-received by the audience and critics. It was featured in various media outlets and received positive reviews. [WeChat Article](https://mp.weixin.qq.com/s/QxN-pPdxsOR80YqNevGGOg), [CGTN Interview](https://news.cgtn.com/news/2019-10-23/New-media-drama-Fusing-modern-technology-and-traditional-art-L1rGAygL8Q/index.html)
-
 #### Highlights
 
 ![Avatar · Mythology](./images/avatar-002.png)
@@ -98,3 +94,7 @@ Multiple 3D model mock-ups were created to visualize the stage setup, projection
 - Costume: Sophia Zhao
 - Lighting: Li Mingfang
 - Project Assistant: Liu Zhao
+
+### Recognition
+
+The project was well-received by the audience and critics. It was featured in various media outlets and received positive reviews. [WeChat Article](https://mp.weixin.qq.com/s/QxN-pPdxsOR80YqNevGGOg), [CGTN Interview](https://news.cgtn.com/news/2019-10-23/New-media-drama-Fusing-modern-technology-and-traditional-art-L1rGAygL8Q/index.html)
