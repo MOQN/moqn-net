@@ -7,9 +7,6 @@ image: "./images/_thumb.jpg"
 featured: true
 ---
 
-**Venue**: New Space Theatre, Shanghai Theatre Academy, Shanghai, China  
-**Collaborators**: Zhang Yinan (Tongji University), Li Yuejuan, Jess Chiayi Seetoo (Shanghai Theatre Academy), Zoe Yu-Chien Cheng
-
 ![Main Image](./images/_main.jpg)
 
 <iframe width="800" height="450" src="//www.youtube.com/embed/Wl_59HQjO3M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
@@ -17,6 +14,9 @@ featured: true
 <iframe width="800" height="450" src="//www.youtube.com/embed/mPm63bvD778?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 
 ### Project Overview
+
+**Venue**: New Space Theatre, Shanghai Theatre Academy, Shanghai, China  
+**Collaborators**: Zhang Yinan (Tongji University), Li Yuejuan, Jess Chiayi Seetoo (Shanghai Theatre Academy), Zoe Yu-Chien Cheng
 
 The project premiered in the 2019 China Shanghai International Arts Festival as “The Rising Artists’ Works.”
 
