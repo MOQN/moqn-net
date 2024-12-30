@@ -346,6 +346,10 @@ a:focus {
   margin: var(--spacing-0);
 }
 
+.post li {
+  margin: var(--spacing-1) 0;
+}
+
 footer {
   text-align: center;
 }
@@ -357,7 +361,8 @@ footer {
 }
 
 .gatsby-resp-image-wrapper {
-  margin: 0.3rem 0;
+  margin: var(--spacing-1) 0;
+  border-radius: var(--rounded-corner);
 }
 
 /* Media queries */
