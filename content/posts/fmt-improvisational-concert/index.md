@@ -9,12 +9,13 @@ featured: true
 
 ![Main Image](./images/_main.jpg)
 
-- **Venue1**: [Shanghai Planetarium (Shanghai Astronomy Museum)](https://www.ennead.com/work/shanghai-astronomy-museum), Pudong, Shanghai, China
-- **Collaborators**: [Feng, Mantian](https://www.ichongqing.info/2021/01/11/chongqing-interview-series-feng-mantian-my-whole-life-and-ruan/), - [inCulture](https://drive.google.com/file/d/13gSf4sPv7_VBIrPLSjFgc7P4I8J0K40U/view?usp=sharing)
+- **Venue**: [Shanghai Planetarium (Shanghai Astronomy Museum)](https://www.ennead.com/work/shanghai-astronomy-museum), Pudong, Shanghai, China
+- **Collaborator**: [Feng Mantian](https://www.ichongqing.info/2021/01/11/chongqing-interview-series-feng-mantian-my-whole-life-and-ruan/)
+- **Producer**: inCulture
 
 <iframe width="800" height="450" src="//www.youtube.com/embed/WxhK6FOfil4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 
-#### Contribution Details:
+#### Contribution
 
 I had the opportunity to collaborate with Chinese Moon Guitar master Feng Mantian and the creative organization inCulture. My responsibilities included:
 
@@ -23,7 +24,7 @@ I had the opportunity to collaborate with Chinese Moon Guitar master Feng Mantia
 - Developing 30+ interactive visual scenes using particle systems and video footage.
 - Tools used: **Three.js** and **Resolume**.
 
-## Supplementary Photos:
+### Highlights
 
 ![Image](./images/image-001.jpg)
 

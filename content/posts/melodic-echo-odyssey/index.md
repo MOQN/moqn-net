@@ -9,7 +9,7 @@ featured: true
 
 ![Main Image](./images/_main.jpg)
 
-**Venue**: Shanghai Concert Hall, Shanghai, China  
+**Venue**: [Shanghai Concert Hall](https://www.shanghaiconcerthall.org/), Shanghai, China  
 **Main Collaborators**: Zhang Yinan, Zheng Kangyi, Li Yuejuan
 
 ### Project Overview

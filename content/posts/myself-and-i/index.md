@@ -9,12 +9,12 @@ featured: true
 
 ![Main Image](./images/_main.jpg)
 
-- **Venue1**: The Great Hall, YUZ Museum, Shanghai, China | November 29, 2020
-- **Venue2**: The 2nd China Contemporary Dance Biennale | September 6 - 12, 2021
-- **Collaborators**: Jess Chiayi Seetoo (Shanghai Theatre Academy) and Jung Min Moon (Chugye University for the Arts, Seoul)
-- **Performance Duration**: Approximately 30 minutes.
+- **Venue 1**: The Great Hall, YUZ Museum, Shanghai, China | November 29, 2020
+- **Venue 2**: The 2nd China Contemporary Dance Biennale | September 6 - 12, 2021
+- **Collaborators**: Jess Chiayi Seetoo (Shanghai Theatre Academy), Jung Min Moon (Chugye University for the Arts, Seoul)
+- **Funding**: Hyundai Art+Tech Public Program
 
-### Project Description
+### Project Overview
 
 In the unfolded space of the subconscious, one encounters... self, and another self, and another... Is it dreams within a dream, memory, past lives, or the cyborgian butterfly mind?
 
