@@ -1,5 +1,5 @@
 .projectBox {
-  background-color: #eee;
+  background-color: #99F;
   width: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
   height: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
   border-radius: var(--rounded-corner);
@@ -22,8 +22,8 @@
 .projectBox:hover {
   transform: scale(1.03);
   /* background-color: rgb(0, 255, 191); */
-  background-color: rgb(200, 200, 150);
-  background-blend-mode: overlay;
+  background-color: #F99;
+  background-blend-mode: screen;
 }
 
 .projectBox::before {
@@ -85,6 +85,8 @@
   margin-bottom: var(--spacing-0);
   /* font-size: 1.2rem; */
   color: black;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
 }
 
 .projectBox h2 {
@@ -92,4 +94,6 @@
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
   color: var(--color-primary);
+  font-size: 1rem;
+  line-height: 1.2rem;
 }
