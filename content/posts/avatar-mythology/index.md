@@ -9,14 +9,10 @@ featured: true
 
 ![Main Image](./images/_main.jpg)
 
-<iframe width="800" height="450" src="//www.youtube.com/embed/Wl_59HQjO3M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-
-<iframe width="800" height="450" src="//www.youtube.com/embed/mPm63bvD778?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-
-### Project Overview
-
 **Venue**: New Space Theatre, Shanghai Theatre Academy, Shanghai, China  
 **Collaborators**: Zhang Yinan (Tongji University), Li Yuejuan, Jess Chiayi Seetoo (Shanghai Theatre Academy), Zoe Yu-Chien Cheng
+
+### Project Overview
 
 The project premiered in the 2019 China Shanghai International Arts Festival as “The Rising Artists’ Works.”
 
@@ -25,6 +21,10 @@ Drawing on the worldview of _Shan Hai Jing_ (Classic of Mountains and Seas), a C
 If the mythical world filled with Eastern totemic symbols represents the birthing of the unknown, the “beasts” that are the “alter-beings” of humans visually render our inner complexes. This piece combines semi-immersive space design with multi-medial visuals to let the audience inhabit the “unknown” and experience their “alter-beings” with the dancers as we journey into the mysteries of life.
 
 In correspondence, the digital media design features technological “avatars” by way of motion capture, interactive animation, and remote control, linking backstage manipulation with front-stage performance. With these all-permeating technological “avatars” as metaphorical “alter-beings,” the performance also embodies the merge between modern technology and traditional arts.
+
+<iframe width="800" height="450" src="//www.youtube.com/embed/Wl_59HQjO3M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="800" height="450" src="//www.youtube.com/embed/mPm63bvD778?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 
 ### Conceptual Exploration
 
