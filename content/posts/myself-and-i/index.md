@@ -5,6 +5,7 @@ description: Improvisational New Media Performance
 keywords: Interactive Installation
 image: "./images/_thumb.jpg"
 featured: true
+priority: 8
 ---
 
 ![Main Image](./images/_main.jpg)

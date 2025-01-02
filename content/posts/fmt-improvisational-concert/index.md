@@ -5,6 +5,7 @@ description: Improvisational / Interactive Audio-Visualization
 keywords: Interactive Installation
 image: "./images/_thumb.jpg"
 featured: true
+priority: 7
 ---
 
 ![Main Image](./images/_main.jpg)

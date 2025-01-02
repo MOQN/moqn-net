@@ -5,6 +5,7 @@ description: Interactive Installation
 keywords: Interactive Installation
 image: "./images/_thumb.jpg"
 featured: true
+priority: -1
 ---
 
 ![Main Image](./images/_main.jpg)

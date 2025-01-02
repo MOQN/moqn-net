@@ -5,6 +5,7 @@ description: AI Narrative Concert
 keywords: AI-Generated Visuals, AI-Generated Music, Real-time Motion Tracking, Robot Arm
 image: "./images/_thumb.jpg"
 featured: true
+priority: 9
 ---
 
 ![Main Image](./images/_main.jpg)

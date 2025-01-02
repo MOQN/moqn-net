@@ -57,6 +57,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: { frontmatter: { featured: { eq: true } } }
+      sort: { frontmatter: { priority: DESC } }
     ) {
       nodes {
         excerpt
@@ -69,6 +70,7 @@ export const pageQuery = graphql`
           description
           keywords
           featured
+          priority
           image {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED),

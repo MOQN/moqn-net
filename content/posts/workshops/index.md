@@ -5,6 +5,7 @@ description: Workshops
 keywords: Interactive Installation
 image: "./images/_thumb.jpg"
 featured: true
+priority: 5
 ---
 
 <!-- ![Main Image](images/_main.jpg)

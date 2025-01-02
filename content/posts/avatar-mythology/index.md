@@ -5,6 +5,7 @@ description: New Media Performance
 keywords: New Media Performing Arts, Dance, Interactive Technology, Motion Tracking, Media Art, Sound Design, 3D Modeling
 image: "./images/_thumb.jpg"
 featured: true
+priority: 10
 ---
 
 ![Main Image](./images/_main.jpg)
