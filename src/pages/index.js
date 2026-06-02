@@ -26,13 +26,20 @@ const PostIndex = ({ data, location }) => {
   return (
 
     <Layout location={location} title={siteTitle}>
-      <div className="project-grid">
+      {/* <div className="project-grid">
         {projects.map(project => (
           <ProjectBox key={project.fields.slug} project={project} />
         ))}
-      </div>
-      <p style={{ color: "#AAA", textAlign: "center" }}>
+      </div> */}
+      {/* <p style={{ color: "#AAA", textAlign: "center" }}>
         The projects have been reorganized for application purposes. Further details will be updated soon.
+      </p> */}
+      <p style={{ color: "#000", textAlign: "right" }}>
+        The webpage is currently under construction. <br />
+        I will see you again soon with more projects and updates!
+      </p>
+      <p style={{ color: "#000", textAlign: "center" }}>
+
       </p>
       {/* <Bio /> */}
     </Layout>

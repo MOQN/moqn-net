@@ -24,12 +24,12 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
+      {/* <footer>
         © {new Date().getFullYear()}, {` `}
         <a href="https://www.moonjunghyun.com/">MOQN</a>. {` `}
         All rights reserved.
 
-      </footer>
+      </footer> */}
     </div>
   )
 }
