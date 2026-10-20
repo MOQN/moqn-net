@@ -1,78 +1,20 @@
-import React from "react";
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
+import * as React from "react"
+import { Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { projectBox, thumbnail, details, number, arrow } from "./ProjectBox.module.css"
 
-import { projectBox } from "./ProjectBox.module.css";
-
-const ProjectBox = ({ project }) => {
-  const { title, date, keywords, description, excerpt, slug, image } = {
-    title: project.frontmatter.title,
-    keywords: project.frontmatter.keywords,
-    description: project.frontmatter.description,
-    excerpt: project.excerpt,
-    slug: project.fields.slug,
-    image: project.frontmatter.image.childImageSharp.gatsbyImageData.images.fallback.src,
-  };
-
+const ProjectBox = ({ project, index = 0 }) => {
+  const image = getImage(project.frontmatter.image)
   return (
-    <Link
-      to={slug}
-      className={projectBox} // Add projectBox class for styling
-      itemScope
-      itemType="http://schema.org/CreativeWork"
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <header>
-        <h2>
-          <span itemProp="name">{title}</span>
-        </h2>
-        <p
-          dangerouslySetInnerHTML={{
-            __html: description || excerpt,
-          }}
-          itemProp="description"
-        />
-      </header>
-      <section>
-        {/* <p itemProp="keywords">{keywords}</p> */}
-        {/* <p
-          dangerouslySetInnerHTML={{
-            __html: description || excerpt,
-          }}
-          itemProp="description"
-        /> */}
-      </section>
+    <Link to={project.fields.slug} className={projectBox}>
+      <span className={number}>{String(index + 1).padStart(2, "0")}</span>
+      {image ? <GatsbyImage image={image} alt={project.frontmatter.title} className={thumbnail} /> : <div className={thumbnail} />}
+      <div className={details}>
+        <h3>{project.frontmatter.title}</h3>
+        <p>{project.frontmatter.description || project.excerpt}</p>
+      </div>
+      <svg className={arrow} aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 19 19 5M5 5h14v14" /></svg>
     </Link>
-  );
-};
-
-ProjectBox.propTypes = {
-  project: PropTypes.shape({
-    frontmatter: PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      keywords: PropTypes.string,
-      description: PropTypes.string,
-      image: PropTypes.shape({
-        childImageSharp: PropTypes.shape({
-          gatsbyImageData: PropTypes.shape({
-            images: PropTypes.shape({
-              fallback: PropTypes.shape({
-                src: PropTypes.string.isRequired,
-              }),
-            }),
-          }),
-        }),
-      }),
-    }),
-    fields: PropTypes.shape({
-      slug: PropTypes.string.isRequired,
-    }),
-    excerpt: PropTypes.string,
-  }).isRequired,
-};
-
-export default ProjectBox;
+  )
+}
+export default ProjectBox

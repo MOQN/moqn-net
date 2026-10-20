@@ -1,99 +1,30 @@
 .projectBox {
-  background-color: #99F;
-  width: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
-  height: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
-  border-radius: var(--rounded-corner);
-  padding: var(--spacing-6);
+  display: grid;
+  grid-template-columns: 28px 180px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 0;
+  border-bottom: 1px solid #deded8;
   text-decoration: none;
-  /* Remove underline from Link */
-  color: inherit;
-  /* Ensure text color is not overridden */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
-  /* Needed for hover effect */
-  transition: transform 0.3s ease, background-color 0.7s ease;
-  /* Smooth hover effects */
-  overflow: hidden;
-  /* Ensure child elements are contained */
+  color: #252620;
 }
-
-.projectBox:hover {
-  transform: scale(1.03);
-  /* background-color: rgb(0, 255, 191); */
-  background-color: #F99;
-  background-blend-mode: screen;
+.thumbnail { width: 180px; aspect-ratio: 1.5; background: #e8e8e1; overflow: hidden; }
+.thumbnail img { transition: transform 250ms ease; }
+.projectBox:hover .thumbnail img { transform: scale(1.04); }
+.number { font-size: 12px; color: #72736b; font-variant-numeric: tabular-nums; }
+.details h3 { margin: 0 0 10px; font-size: 22px; line-height: 1.35; letter-spacing: -0.025em; }
+.details p { margin: 0; color: #65665e; font-size: 16px; line-height: 1.6; text-align: left; }
+.arrow { font-size: 24px; transition: transform 200ms ease; }
+.projectBox:hover .arrow { transform: translate(3px, -3px); }
+.projectBox:hover h3 { color: #596b40; }
+@media (max-width: 600px) {
+  .projectBox { grid-template-columns: 96px minmax(0, 1fr) 18px; gap: 16px; padding: 24px 0; }
+  .number { display: none; }
+  .thumbnail { width: 96px; }
+  .details h3 { font-size: 18px; margin-bottom: 6px; }
+  .details p { font-size: 14px; }
+  .arrow { font-size: 20px; }
 }
-
-.projectBox::before {
-  content: "";
-  /* Creates an overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  /* Light overlay */
-  z-index: 1;
-  /* Ensure overlay appears below text */
-  border-radius: var(--rounded-corner);
-  /* Match border radius */
-  opacity: 0;
-  /* Hidden by default */
-  transition: opacity 0.7s ease;
-  /* Smooth fade effect */
-}
-
-.projectBox:hover::before {
-  opacity: 1;
-  /* Show overlay on hover */
-}
-
-.projectBox h2,
-.projectBox p {
-  text-align: left;
-  position: relative;
-  opacity: 0;
-  /* Hidden by default */
-  visibility: hidden;
-  /* Ensures it doesn't block interactions */
-  transform: translateY(10px);
-  /* Subtle downward offset */
-  transition: opacity 0.5s ease, transform 1.0s ease;
-  /* Smooth appearance */
-  z-index: 2;
-  /* Ensure text appears above the overlay */
-}
-
-.projectBox:hover h2,
-.projectBox:hover p {
-  opacity: 1;
-  /* Show text */
-  visibility: visible;
-  /* Make text interactable */
-  transform: translateY(0);
-  /* Reset position */
-}
-
-.projectBox header {
-  margin-bottom: var(--spacing-4);
-}
-
-.projectBox p {
-  margin-bottom: var(--spacing-0);
-  /* font-size: 1.2rem; */
-  color: black;
-  font-size: 0.8rem;
-  line-height: 0.9rem;
-}
-
-.projectBox h2 {
-  font-size: var(--fontSize-4);
-  margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
-  color: var(--color-primary);
-  font-size: 1.1rem;
-  line-height: 1.3rem;
+@media (prefers-reduced-motion: reduce) {
+  .thumbnail img, .arrow { transition: none; }
 }

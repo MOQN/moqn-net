@@ -1,37 +1,28 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import UnderConstruction from "./UnderConstruction"
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
-  let header
-
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
+  if (process.env.GATSBY_PORTFOLIO_PREVIEW !== "true") {
+    return <UnderConstruction title={title} />
   }
-
+  const isRootPath = location?.pathname === `${__PATH_PREFIX__}/`
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      {/* <footer>
-        © {new Date().getFullYear()}, {` `}
-        <a href="https://www.moonjunghyun.com/">MOQN</a>. {` `}
-        All rights reserved.
-
-      </footer> */}
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <header className="global-header">
+        <Link className="site-wordmark" to="/">{title}</Link>
+        <nav aria-label="Main navigation">
+          <Link to="/#projects">Work</Link>
+          <Link to="/#about">About</Link>
+        </nav>
+      </header>
+      <main id="main-content">{children}</main>
+      <footer className="site-footer">
+        <span>© {new Date().getFullYear()} Moon, Jung Hyun</span>
+        <span>Art · Code · Education</span>
+      </footer>
     </div>
   )
 }
-
 export default Layout

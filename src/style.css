@@ -1,7 +1,7 @@
 /* CSS Custom Properties Definitions */
 
 /* import font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Raleway:ital,wght@0,300..600;1,300..600&family=Noto+Sans+Mono:wght@400;600&display=swap');
+
 
 :root {
   --maxWidth-none: "none";
@@ -372,3 +372,59 @@ footer {
     margin-left: var(--spacing-0);
   }
 }
+/* Quiet, readable portfolio layout. */
+:root {
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif;
+  --font-heading: var(--font-body);
+  --color-primary: #4c6139;
+  --color-text: #292b25;
+  --color-text-light: #65665e;
+  --color-accent: #deded8;
+  --rounded-corner: 2px;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+body { background: #fafaf7; font-size: 18px; }
+p { text-align: left; }
+a { text-underline-offset: 5px; }
+a:focus-visible { outline: 2px solid #596b40; outline-offset: 6px; }
+.global-wrapper { max-width: 1040px; padding: 0 48px; }
+.global-header { display: flex; justify-content: space-between; align-items: center; padding: 32px 0; margin: 0; border-bottom: 1px solid #deded8; }
+.site-wordmark { color: #252620; font-size: 26px; font-weight: 600; letter-spacing: -1.5px; text-decoration: none; }
+.global-header nav { display: flex; gap: 28px; }
+.global-header nav a { color: #505248; text-decoration: none; font-size: 15px; }
+.global-header nav a:hover { color: #4c6139; text-decoration: underline; }
+.home-intro { padding: 100px 0 88px; }
+.eyebrow { font-size: 12px; letter-spacing: .13em; text-transform: uppercase; color: #65665e; margin-bottom: 24px; }
+.home-intro h1 { font-size: clamp(40px, 6.5vw, 70px); letter-spacing: -.055em; line-height: 1.07; margin: 0 0 28px; font-weight: 500; }
+.intro-description { max-width: 490px; color: #65665e; line-height: 1.8; margin-bottom: 28px; }
+.text-link { font-size: 15px; text-decoration: none; }
+.text-link svg { margin-left: 14px; vertical-align: middle; }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 0 0 20px; border-bottom: 1px solid #292b25; }
+.section-heading h2 { font-size: 18px; margin: 0; letter-spacing: -.02em; }
+.section-heading span { font-size: 13px; color: #65665e; }
+.home-about { margin-top: 88px; padding: 48px 0 72px; max-width: 600px; }
+.home-about h2 { font-size: 32px; letter-spacing: -.035em; margin: 0 0 22px; }
+.home-about > p:last-child { color: #65665e; line-height: 1.85; }
+.site-footer { border-top: 1px solid #deded8; display: flex; justify-content: space-between; gap: 20px; padding: 28px 0; color: #65665e; font-size: 12px; text-align: left; }
+.post { max-width: 720px; margin: 64px auto 0; }
+.post header h1 { font-size: clamp(32px, 5vw, 48px); letter-spacing: -.04em; line-height: 1.15; }
+.post header p { font-size: 16px; color: #65665e; line-height: 1.8; }
+.post section { font-size: 18px; line-height: 1.85; overflow-wrap: anywhere; }
+.post section img, .post section iframe { max-width: 100%; }
+.post .gatsby-resp-image-wrapper { max-width: 600px !important; margin: 32px auto !important; }
+.post pre { overflow-x: auto; }
+.post-nav { max-width: 720px; margin: 48px auto; font-size: 15px; }
+.skip-link { position: absolute; top: -100px; }
+.skip-link:focus { top: 10px; background: #fafaf7; padding: 10px; z-index: 10; }
+@media (max-width: 600px) {
+  .global-wrapper { padding: 0 22px; }
+  .global-header { padding: 24px 0; }
+  .home-intro { padding: 64px 0; }
+  .intro-description { font-size: 17px; }
+  .home-about { margin-top: 48px; padding: 32px 0; }
+  .home-about h2 { font-size: 28px; }
+  .site-footer { flex-direction: column; gap: 8px; }
+  .post { margin-top: 40px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.construction { min-height: 70vh; }
