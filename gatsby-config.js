@@ -43,7 +43,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 800,
+              maxWidth: 1400,
             },
           },
           {
@@ -125,6 +125,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
+        include_favicon: false,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },

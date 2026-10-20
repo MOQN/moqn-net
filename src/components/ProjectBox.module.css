@@ -1,23 +1,12 @@
-.projectBox {
-  display: grid;
-  grid-template-columns: 104px minmax(0, 1fr);
-  gap: 20px;
-  align-items: center;
-  padding: 19px 0;
-  border-bottom: 1px solid #e5e5e5;
-  color: inherit;
-  text-decoration: none;
-}
+.projectBox { display: block; min-width: 0; color: inherit; text-decoration: none; }
+.thumbnail { display: block; width: 100%; aspect-ratio: 1 / 1; background: #f5f5f5; transition: opacity .25s ease; }
+.details { padding-top: 13px; }
+.details h2 { text-transform: lowercase; margin: 0; font-size: 13px; font-weight: 500; line-height: 1.4; letter-spacing: 0; }
+.details p { display: flex; justify-content: space-between; gap: 12px; margin: 4px 0 0; color: #777; font-size: 11px; line-height: 1.4; }
+.projectBox:hover .thumbnail { opacity: .86; }
+.projectBox:focus-visible { outline-offset: 6px; }
+@media (prefers-reduced-motion: reduce) { .thumbnail { transition: none; } }
 
-.projectBox:first-child { border-top: 1px solid #e5e5e5; }
-.thumbnail { width: 104px; aspect-ratio: 1.5; background: #f3f3f3; }
-.details h3 { margin: 0 0 4px; font-size: 18px; font-weight: 500; line-height: 1.35; }
-.details p { margin: 0; color: #737373; font-size: 14px; line-height: 1.45; }
-.projectBox:hover h3, .projectBox:focus-visible h3 { text-decoration: underline; text-underline-offset: 3px; }
-
-@media (max-width: 600px) {
-  .projectBox { grid-template-columns: 80px minmax(0, 1fr); gap: 15px; padding: 16px 0; }
-  .thumbnail { width: 80px; }
-  .details h3 { font-size: 16px; }
-  .details p { font-size: 13px; }
-}
+.placeholder { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 28px; text-align: center; gap: 18px; }
+.placeholder span { max-width: 24ch; font-size: clamp(18px, 2vw, 28px); line-height: 1.3; letter-spacing: -.025em; color: #555; text-transform: lowercase; }
+.placeholder small { font-size: 10px; color: #888; letter-spacing: .04em; }

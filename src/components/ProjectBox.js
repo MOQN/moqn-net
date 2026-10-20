@@ -1,20 +1,18 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { projectBox, thumbnail, details } from "./ProjectBox.module.css"
+import { projectBox, thumbnail, placeholder, details } from "./ProjectBox.module.css"
 
-const ProjectBox = ({ project }) => {
+const ProjectBox = ({ project, eager = false }) => {
+  const { title, category, date } = project.frontmatter
   const image = getImage(project.frontmatter.image)
-
   return (
-    <Link to={project.fields.slug} className={projectBox}>
-      {image && <GatsbyImage image={image} alt="" className={thumbnail} />}
+    <a href={project.fields.slug} className={projectBox}>
+      {image ? <GatsbyImage image={image} alt={title} className={thumbnail} loading={eager ? "eager" : "lazy"} objectFit="cover" objectPosition="50% 50%" /> : <div className={`${thumbnail} ${placeholder}`} aria-hidden="true"><span>{title}</span><small>image pending</small></div>}
       <div className={details}>
-        <h3>{project.frontmatter.title}</h3>
-        <p>{project.frontmatter.description || project.excerpt}</p>
+        <h2>{title}</h2>
+        <p><span>{category}</span><span>{date?.slice(0, 4)}</span></p>
       </div>
-    </Link>
+    </a>
   )
 }
-
 export default ProjectBox

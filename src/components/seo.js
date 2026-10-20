@@ -31,6 +31,8 @@ const Seo = ({ description, title, children }) => {
   return (
     <>
       <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=moqn3" />
+      <link rel="icon" type="image/svg+xml" href="/moqn-favicon.svg?v=3" />
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
