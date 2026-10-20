@@ -1,18 +1,10 @@
 # moqn-net
- 
 
-## Display mode
+## Draft preview
 
-The default build and development server show an under-construction screen on
-all pages. The portfolio design is only rendered when explicitly enabled for
-local review:
+The `draft-v1` branch displays the portfolio directly with `npm run develop`
+or `npm run build`. No preview environment variable is required.
 
-```sh
-GATSBY_PORTFOLIO_PREVIEW=true npm run develop
-```
-
-For local screenshot builds, use `GATSBY_PORTFOLIO_PREVIEW=true npm run build`.
-Never deploy that preview output while the site is under construction. Rebuild
-without the variable (`env -u GATSBY_PORTFOLIO_PREVIEW npm run build`) before
-publishing. This switch controls presentation; it is not an authentication or
-content-access restriction.
+`src/components/UnderConstruction.js` is retained for future use but is not
+rendered by this branch. Keep the production branch separate while reviewing
+this draft in Netlify Deploy Previews.
