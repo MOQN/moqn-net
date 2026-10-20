@@ -4,35 +4,33 @@ import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import ProjectBox from "../components/ProjectBox"
 
-const PostIndex = ({ data, location }) => {
+const HomePage = ({ data, location }) => {
   const projects = data.allMarkdownRemark.nodes
+
   return (
     <Layout location={location} title={data.site.siteMetadata.title}>
       <section className="home-intro" aria-labelledby="intro-title">
-        <p className="eyebrow">Moon, Jung Hyun · Portfolio</p>
-        <h1 id="intro-title">Code, art,<br />and everything between.</h1>
-        <p className="intro-description">Educator & creative coder.<br />Exploring ideas through interactive media, performance, and creative technology.</p>
-        <a className="text-link" href="#projects">Explore selected work <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="m5 5 14 14M5 19h14V5" /></svg></a>
+        <h1 id="intro-title">Moon Jung Hyun</h1>
+        <p>Educator and creative coder working across art, technology, and performance.</p>
       </section>
+
       <section id="projects" aria-labelledby="projects-title">
-        <div className="section-heading">
-          <h2 id="projects-title">Selected work</h2>
-          <span>{String(projects.length).padStart(2, "0")} projects</span>
-        </div>
+        <h2 className="section-title" id="projects-title">Selected work</h2>
         <div className="project-list">
-          {projects.map((project, index) => <ProjectBox key={project.fields.slug} project={project} index={index} />)}
+          {projects.map(project => <ProjectBox key={project.fields.slug} project={project} />)}
         </div>
-        {!projects.length && <p>New projects are on the way.</p>}
+        {projects.length === 0 && <p>New projects are on the way.</p>}
       </section>
+
       <section id="about" className="home-about" aria-labelledby="about-title">
-        <p className="eyebrow">A little about me</p>
-        <h2 id="about-title">Making room for curiosity.</h2>
-        <p>My practice brings together education, creative coding, and new media. This is a collection of experiments, performances, and collaborations along the way.</p>
+        <h2 className="section-title" id="about-title">About</h2>
+        <p>I explore ideas through education, creative coding, and new media. Here are some projects, performances, and collaborations along the way.</p>
       </section>
     </Layout>
   )
 }
-export default PostIndex
+
+export default HomePage
 export const Head = () => <Seo title="Home" />
 export const pageQuery = graphql`
   {
@@ -47,7 +45,7 @@ export const pageQuery = graphql`
         frontmatter {
           title
           description
-          image { childImageSharp { gatsbyImageData(width: 480, aspectRatio: 1.5, placeholder: BLURRED) } }
+          image { childImageSharp { gatsbyImageData(width: 320, aspectRatio: 1.5, placeholder: BLURRED) } }
         }
       }
     }
