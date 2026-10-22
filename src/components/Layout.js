@@ -1,37 +1,18 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
-  let header
-
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
-  }
-
-  return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      {/* <footer>
-        © {new Date().getFullYear()}, {` `}
-        <a href="https://www.moonjunghyun.com/">MOQN</a>. {` `}
-        All rights reserved.
-
-      </footer> */}
-    </div>
-  )
-}
-
+const Layout = ({ location, children }) => (
+  <div className={`global-wrapper${["", "/index.html", "/work"].includes(location?.pathname?.replace(/\/$/, "")) ? " work-page" : ""}`} id="top">
+    <a className="skip-link" href="#main-content">Skip to content</a>
+    <header className="global-header">
+      <Link className="site-wordmark" to="/" aria-label="moqn home">moqn</Link>
+      <nav aria-label="Main navigation">
+        <Link to="/" activeClassName="active">[ Work ]</Link>
+        <Link to="/about/" activeClassName="active">[ About ]</Link>
+      </nav>
+    </header>
+    <main id="main-content">{children}</main>
+    <footer className="site-footer"><span>© {new Date().getFullYear()} moqn</span><a href="#top">Back to top ↑</a></footer>
+  </div>
+)
 export default Layout

@@ -2,6 +2,12 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Seo from "../components/seo";
+import projectDetails from "../../content/project-details.json";
+
+const renderDetail = value => value.split(/(\[[^\]]+\]\(https?:\/\/[^)]+\))/g).map((part, index) => {
+  const link = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)]+)\)$/);
+  return link ? <a key={index} href={link[2]} target="_blank" rel="noopener noreferrer">{link[1]}</a> : part;
+});
 
 const PostTemplate = ({
   data: { previous, next, site, markdownRemark: post, allFile },
@@ -9,66 +15,18 @@ const PostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`;
 
-  const processDate = (date) => {
-    if (date.includes(",")) {
-      // Split string into an array by commas
-      const dateArray = date.split(",").map((d) => d.trim()); // Remove extra spaces
-
-      // Map through the array to format each date
-      return dateArray
-        .map((d, index) => {
-          const formattedDate = formatDate(d);
-          if (index === dateArray.length - 2) {
-            // Add "and" before the second-to-last date
-            return `${formattedDate} and`;
-          } else if (index < dateArray.length - 2) {
-            // Add a comma for all other dates except the last
-            return `${formattedDate},`;
-          }
-          return formattedDate; // Last date, no punctuation
-        })
-        .join(" "); // Combine the mapped strings with spaces
-    } else if (typeof date === "string" && date.includes(" to ")) {
-      // Handle date ranges (e.g., "YYYY-MM-DD to YYYY-MM-DD")
-      const [start, end] = date.split(" to ");
-      return `${formatDate(start)} - ${formatDate(end)}`;
-    } else {
-      // Single date case
-      return formatDate(date);
-    }
+  const formatDate = value => {
+    const date = value.trim();
+    if (/^present$/i.test(date)) return "Present";
+    const match = date.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?$/);
+    if (!match) return date;
+    const [, year, month, day] = match;
+    if (!month || month === "00") return year;
+    const name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][Number(month) - 1];
+    if (!name) return date;
+    return !day || day === "00" ? `${name} ${year}` : `${name} ${Number(day)}, ${year}`;
   };
-
-  const formatDate = (date) => {
-    const monthNames = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
-
-    const parts = date.split("-");
-    const year = parts[0];
-    const monthIndex = parseInt(parts[1], 10) - 1; // Convert month to zero-based index
-    const day = parts[2];
-
-    const monthName = monthNames[monthIndex];
-    // lower case 
-    if (date.toLowerCase() === "present") {
-      return "Present";
-    }
-    else if (day === "00") {
-      return `${monthName} ${year}`; // Omit day
-    }
-    return `${monthName} ${day}, ${year}`;
-  };
+  const processDate = value => value.split(",").map(part => part.split(/ to /i).map(formatDate).join(" – ")).join("; ");
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -79,11 +37,15 @@ const PostTemplate = ({
       >
         <header>
           <h1 itemProp="name">{post.frontmatter.title}</h1>
-          <p itemProp="dateCreated">
-            <span itemProp="description">{post.frontmatter.description}</span>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            <span itemProp="dateCreated">{processDate(post.frontmatter.date)} </span>
-          </p>
+          <div className="project-facts">
+            {post.frontmatter.description && <p itemProp="description">{post.frontmatter.description}</p>}
+            {post.frontmatter.date && <p>{processDate(post.frontmatter.date)}</p>}
+            {projectDetails[post.fields.slug]?.map((detail, index) => (
+              <p key={`${detail.label}-${index}`}>
+                {detail.label === "collaborators" && "collaborators: "}{renderDetail(detail.value.replace(/ · /g, ", "))}
+              </p>
+            ))}
+          </div>
         </header>
 
         <section
@@ -91,11 +53,9 @@ const PostTemplate = ({
           itemProp="description"
         />
 
-        <hr />
 
-        <footer></footer>
       </article>
-      <nav className="post-nav">
+      <nav className="post-nav" aria-label="Other projects">
         <ul
           style={{
             display: `flex`,
@@ -149,6 +109,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       id
+      fields { slug }
       excerpt(pruneLength: 160)
       html
       frontmatter {

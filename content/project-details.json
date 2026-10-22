@@ -1,0 +1,323 @@
+{
+  "/mocap-deepti-gupta/": [
+    {
+      "label": "venue",
+      "value": "Dance Studio, NYU Shanghai, China"
+    },
+    {
+      "label": "showcase",
+      "value": "October 24, 2019"
+    }
+  ],
+  "/improvisational-drawing-2019/": [
+    {
+      "label": "venue",
+      "value": "New Space Theatre, Shanghai Theatre Academy, Shanghai, China"
+    },
+    {
+      "label": "host",
+      "value": "Shanghai Improvisation Festival, 2019 and 2021"
+    },
+    {
+      "label": "collaborators",
+      "value": "Zhang Yinan (Tongji University), Li Yuejuan (2021)"
+    }
+  ],
+  "/wings-of-the-isang/": [
+    {
+      "label": "venue",
+      "value": "Chang-dong Platform 61, Seoul, Korea"
+    },
+    {
+      "label": "roles",
+      "value": "Art Direction, Visual Art & Creative Coding, Operation Direction"
+    },
+    {
+      "label": "collaborators",
+      "value": "Wings of the Isang"
+    }
+  ],
+  "/thread-screen-simulation/": [
+    {
+      "label": "tool",
+      "value": "OpenFrameworks, based on C++"
+    }
+  ],
+  "/myself-and-i/": [
+    {
+      "label": "venue 1",
+      "value": "The Great Hall, YUZ Museum, Shanghai, China | November 29, 2020"
+    },
+    {
+      "label": "venue 2",
+      "value": "The 2nd China Contemporary Dance Biennale | September 6 - 12, 2021"
+    },
+    {
+      "label": "funding",
+      "value": "Hyundai Art+Tech Public Program"
+    },
+    {
+      "label": "collaborators",
+      "value": "Jess Chiayi Seetoo (Shanghai Theatre Academy), Jung Min Moon (Chugye University for the Arts, Seoul)"
+    }
+  ],
+  "/melodic-echo-odyssey/": [
+    {
+      "label": "venue",
+      "value": "[Shanghai Concert Hall](https://www.shanghaiconcerthall.org/), Shanghai, China"
+    },
+    {
+      "label": "collaborators",
+      "value": "Zhang Yinan, Zheng Kangyi, Li Yuejuan"
+    }
+  ],
+  "/fmt-improvisational-concert/": [
+    {
+      "label": "venue",
+      "value": "[Shanghai Planetarium (Shanghai Astronomy Museum)](https://www.ennead.com/work/shanghai-astronomy-museum), Pudong, Shanghai, China"
+    },
+    {
+      "label": "producer",
+      "value": "inCulture"
+    },
+    {
+      "label": "collaborators",
+      "value": "[Feng Mantian](https://www.ichongqing.info/2021/01/11/chongqing-interview-series-feng-mantian-my-whole-life-and-ruan/)"
+    }
+  ],
+  "/avatar-mythology/": [
+    {
+      "label": "venue",
+      "value": "New Space Theatre, Shanghai Theatre Academy, Shanghai, China"
+    },
+    {
+      "label": "collaborators",
+      "value": "Zhang Yinan (Tongji University), Li Yuejuan, Jess Chiayi Seetoo (Shanghai Theatre Academy), Zoe Yu-Chien Cheng"
+    }
+  ],
+  "/the-listening-mirror/": [
+    {
+      "label": "material",
+      "value": "Acrylic mirrors, aluminum frame, servo motors, microphones"
+    },
+    {
+      "label": "tools",
+      "value": "Arduino, Max/MSP; Processing and op-amp circuits in the prototype"
+    }
+  ],
+  "/augmented-soundscape-headphones/": [
+    {
+      "label": "tools",
+      "value": "Arduino Pro Micro, MPU-6050, XBee, Processing, Ableton Live"
+    },
+    {
+      "label": "collaborators",
+      "value": "TK, Jiwon"
+    }
+  ],
+  "/the-nature-of-water/": [],
+  "/interactive-led-london-2012/": [
+    {
+      "label": "venue",
+      "value": "100% Design, Earl’s Court, London, UK"
+    },
+    {
+      "label": "support",
+      "value": "KIDP, KOTRA, CELL Lighting"
+    }
+  ],
+  "/sori-paint/": [],
+  "/void/": [],
+  "/the-feast-of-space/": [
+    {
+      "label": "venue",
+      "value": "International Astronautical Congress, Daejeon, Korea"
+    },
+    {
+      "label": "team",
+      "value": "KoIAN"
+    }
+  ],
+  "/stickies-and-piano/": [
+    {
+      "label": "venue",
+      "value": "Israel"
+    },
+    {
+      "label": "collaborators",
+      "value": "Romy Achituv — director"
+    }
+  ],
+  "/interactive-programs-for-children/": [
+    {
+      "label": "venue",
+      "value": "Hangaram Art Museum, Seoul Arts Center; Seongnam Arts Center; Jecheon EXPO"
+    },
+    {
+      "label": "tools",
+      "value": "Flash AS2/AS3, webcam tracking, infrared LEDs and Wii Remote"
+    }
+  ],
+  "/being-master/": [
+    {
+      "label": "venue",
+      "value": "Insa Art Center, Seoul, Korea"
+    },
+    {
+      "label": "collaborators",
+      "value": "Park Jong Young"
+    }
+  ],
+  "/ovoco-marchak/": [
+    {
+      "label": "venue",
+      "value": "OVOCO & Marchak Jewelry Gallery, Seoul"
+    },
+    {
+      "label": "collaborators",
+      "value": "Hamundsen, Sun Kye Yong, Kim Hwi Suk"
+    }
+  ],
+  "/wearing-sound/": [
+    {
+      "label": "venue",
+      "value": "Hongik, Seoul, Korea"
+    }
+  ],
+  "/ar-planet/": [
+    {
+      "label": "venue",
+      "value": "London, UK"
+    },
+    {
+      "label": "collaborators",
+      "value": "Youjin Yoon"
+    }
+  ],
+  "/led-media-facades/": [
+    {
+      "label": "team",
+      "value": "CELL Lighting"
+    }
+  ],
+  "/cheonggyecheon-projection/": [
+    {
+      "label": "venue",
+      "value": "Cheonggyecheon, Seoul, Korea"
+    }
+  ],
+  "/thisability/": [
+    {
+      "label": "venue",
+      "value": "CAFA Art Museum, Beijing, China"
+    },
+    {
+      "label": "team",
+      "value": "KoIAN"
+    }
+  ],
+  "/sony-meets-design/": [
+    {
+      "label": "venue",
+      "value": "KT Art Hall, Seoul, Korea"
+    },
+    {
+      "label": "collaborators",
+      "value": "Chang Kwang Hyo"
+    }
+  ],
+  "/gift/": [
+    {
+      "label": "venue",
+      "value": "Jangcheon Art Hall, Seoul, Korea"
+    }
+  ],
+  "/panpacific/": [
+    {
+      "label": "venue",
+      "value": "PanPacific building, Seoul, Korea"
+    }
+  ],
+  "/nabi-hackathon/": [],
+  "/pong/": [
+    {
+      "label": "venue",
+      "value": "ITP Big Screens, IAC, New York, US"
+    }
+  ],
+  "/equilateral/": [
+    {
+      "label": "role",
+      "value": "Created by MOQN"
+    },
+    {
+      "label": "collaborators",
+      "value": "Xiaoxaio Wang, Yachao Zhu, Hongyu Guo (dance); JungMin Moon (sound design); Julia Irwin (conceptual development)"
+    }
+  ],
+  "/pinlight/": [
+    {
+      "label": "venue",
+      "value": "DaVinci Idea, Geumcheon Art Space, Seoul, Korea"
+    }
+  ],
+  "/embodied-cosmopolitanism/": [
+    {
+      "label": "venue",
+      "value": "BAM & GWU"
+    },
+    {
+      "label": "tools",
+      "value": "openFrameworks"
+    },
+    {
+      "label": "collaborators",
+      "value": "Hyunju Lee Dance Company, Hyuns Hong, JungHyun Moon, Eddy Kim, Laban Movers"
+    }
+  ],
+  "/genai-research-teaching/": [
+    {
+      "label": "venue",
+      "value": "NYU Shanghai"
+    }
+  ],
+  "/movement-becomes-dialogue/": [],
+  "/machine-learning-tools-rosso/": [
+    {
+      "label": "venue",
+      "value": "Rosso, China"
+    }
+  ],
+  "/nasa-space-apps/": [
+    {
+      "label": "venue",
+      "value": "Wall Street, New York"
+    }
+  ],
+  "/ash-and-hush/": [
+    {
+      "label": "venue",
+      "value": "Across, Hongik Museum of Art, Seoul, Korea"
+    },
+    {
+      "label": "collaborators",
+      "value": "Romy Achituv"
+    }
+  ],
+  "/krapps-last-tape/": [
+    {
+      "label": "venue",
+      "value": "Media City Seoul Biennale — Spell on You, Seoul Museum of Art, Korea"
+    },
+    {
+      "label": "collaborators",
+      "value": "Romy Achituv"
+    }
+  ],
+  "/lac/": [
+    {
+      "label": "organization",
+      "value": "Live Arts Collaborative (LAC)"
+    }
+  ]
+}

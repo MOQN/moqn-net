@@ -1,78 +1,18 @@
-import React from "react";
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
+import * as React from "react"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { projectBox, thumbnail, placeholder, details } from "./ProjectBox.module.css"
 
-import { projectBox } from "./ProjectBox.module.css";
-
-const ProjectBox = ({ project }) => {
-  const { title, date, keywords, description, excerpt, slug, image } = {
-    title: project.frontmatter.title,
-    keywords: project.frontmatter.keywords,
-    description: project.frontmatter.description,
-    excerpt: project.excerpt,
-    slug: project.fields.slug,
-    image: project.frontmatter.image.childImageSharp.gatsbyImageData.images.fallback.src,
-  };
-
+const ProjectBox = ({ project, eager = false }) => {
+  const { title, category, date } = project.frontmatter
+  const image = getImage(project.frontmatter.image)
   return (
-    <Link
-      to={slug}
-      className={projectBox} // Add projectBox class for styling
-      itemScope
-      itemType="http://schema.org/CreativeWork"
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <header>
-        <h2>
-          <span itemProp="name">{title}</span>
-        </h2>
-        <p
-          dangerouslySetInnerHTML={{
-            __html: description || excerpt,
-          }}
-          itemProp="description"
-        />
-      </header>
-      <section>
-        {/* <p itemProp="keywords">{keywords}</p> */}
-        {/* <p
-          dangerouslySetInnerHTML={{
-            __html: description || excerpt,
-          }}
-          itemProp="description"
-        /> */}
-      </section>
-    </Link>
-  );
-};
-
-ProjectBox.propTypes = {
-  project: PropTypes.shape({
-    frontmatter: PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      keywords: PropTypes.string,
-      description: PropTypes.string,
-      image: PropTypes.shape({
-        childImageSharp: PropTypes.shape({
-          gatsbyImageData: PropTypes.shape({
-            images: PropTypes.shape({
-              fallback: PropTypes.shape({
-                src: PropTypes.string.isRequired,
-              }),
-            }),
-          }),
-        }),
-      }),
-    }),
-    fields: PropTypes.shape({
-      slug: PropTypes.string.isRequired,
-    }),
-    excerpt: PropTypes.string,
-  }).isRequired,
-};
-
-export default ProjectBox;
+    <a href={project.fields.slug} className={projectBox}>
+      {image ? <GatsbyImage image={image} alt={title} className={thumbnail} loading={eager ? "eager" : "lazy"} objectFit="cover" objectPosition="50% 50%" /> : <div className={`${thumbnail} ${placeholder}`} aria-hidden="true"><span>{title}</span><small>image pending</small></div>}
+      <div className={details}>
+        <h2>{title}</h2>
+        <p><span>{category}</span><span>{date?.slice(0, 4)}</span></p>
+      </div>
+    </a>
+  )
+}
+export default ProjectBox

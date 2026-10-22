@@ -4,19 +4,17 @@ date: "2022-09-26" # YYYY-MM-DD or YYYY-MM-DD to YYYY-MM-DD or YYYY-MM-DD, YYYY-
 description: Improvisational / Interactive Audio-Visualization
 keywords: Interactive Installation
 image: "./images/_thumb.jpg"
+category: art
 featured: true
 priority: 7
+selected: false
 ---
 
 ![Main Image](./images/_main.jpg)
 
-- **Venue**: [Shanghai Planetarium (Shanghai Astronomy Museum)](https://www.ennead.com/work/shanghai-astronomy-museum), Pudong, Shanghai, China
-- **Collaborator**: [Feng Mantian](https://www.ichongqing.info/2021/01/11/chongqing-interview-series-feng-mantian-my-whole-life-and-ruan/)
-- **Producer**: inCulture
+<iframe loading="lazy" title="Feng Mantian&#x27;s Moon Guitar Live Concert — video" width="800" height="450" src="https://www.youtube.com/embed/WxhK6FOfil4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="800" height="450" src="//www.youtube.com/embed/WxhK6FOfil4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-
-#### Contribution
+## Role
 
 I had the opportunity to collaborate with Chinese Moon Guitar master Feng Mantian and the creative organization inCulture. My responsibilities included:
 
@@ -24,8 +22,6 @@ I had the opportunity to collaborate with Chinese Moon Guitar master Feng Mantia
 - Drafting a 3D simulation of the space to evaluate specifications for equipment (e.g., four 30,000 lumens projectors).
 - Developing 30+ interactive visual scenes using particle systems and video footage.
 - Tools used: **Three.js** and **Resolume**.
-
-### Highlights
 
 ![Image](./images/image-001.jpg)
 

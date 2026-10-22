@@ -1,93 +1,59 @@
-import * as React from "react";
-import { graphql } from "gatsby";
+import * as React from "react"
+import { graphql } from "gatsby"
+import Layout from "../components/Layout"
+import Seo from "../components/seo"
+import ProjectBox from "../components/ProjectBox"
+import Intro from "../components/Intro"
 
-// import Bio from "../components/Bio"
-import Layout from "../components/Layout";
-import Seo from "../components/seo";
-import ProjectBox from "../components/ProjectBox";
+const WorkPage = ({ data, location }) => {
+  const [showIntro, setShowIntro] = React.useState(true)
+  const finishIntro = React.useCallback(() => setShowIntro(false), [])
+  const projects = [...data.allMarkdownRemark.nodes].sort((a, b) => Number(Boolean(b.frontmatter.image)) - Number(Boolean(a.frontmatter.image)))
+  const [category, setCategory] = React.useState("selected")
+  const categories = ["selected", "art", "code", "education", "all"]
+  const visible = category === "all" ? projects : projects.filter(project => category === "selected" ? project.frontmatter.selected === true : project.frontmatter.category === category)
 
-const PostIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const projects = data.allMarkdownRemark.nodes
-
-  // if there are no posts, display a message
-  if (projects.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        {/* <Bio /> */}
-        <p>
-          No posts found.
-        </p>
-      </Layout>
-    )
-  }
-
-  // if there are posts, display them in a grid
   return (
-
-    <Layout location={location} title={siteTitle}>
-      {/* <div className="project-grid">
-        {projects.map(project => (
-          <ProjectBox key={project.fields.slug} project={project} />
-        ))}
-      </div> */}
-      {/* <p style={{ color: "#AAA", textAlign: "center" }}>
-        The projects have been reorganized for application purposes. Further details will be updated soon.
-      </p> */}
-      <p style={{ color: "#000", textAlign: "right" }}>
-        The webpage is currently under construction. <br />
-        I will see you again soon with more projects and updates!
-      </p>
-      <p style={{ color: "#000", textAlign: "center" }}>
-
-      </p>
-      {/* <Bio /> */}
+    <>
+    {showIntro && <Intro onComplete={finishIntro} />}
+    <div inert={showIntro ? "" : undefined}>
+    <Layout location={location} title={data.site.siteMetadata.title}>
+      <section id="projects" aria-label="Selected work">
+        <div className="work-toolbar">
+          <div className="work-filters" role="group" aria-label="Filter projects">
+            {categories.map(item => <button key={item} type="button" aria-pressed={category === item} onClick={() => setCategory(item)}>{item}</button>)}
+          </div>
+        </div>
+        <div className="project-grid">
+          {visible.map((project, index) => <ProjectBox key={project.fields.slug} project={project} eager={index < 2} />)}
+        </div>
+        {visible.length === 0 && <p>No projects yet.</p>}
+      </section>
     </Layout>
+    </div>
+    </>
   )
 }
 
-export default PostIndex
-
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
-
+export default WorkPage
+export const Head = () => <Seo title="Selected work" />
 export const pageQuery = graphql`
   {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+    site { siteMetadata { title } }
     allMarkdownRemark(
       filter: { frontmatter: { featured: { eq: true } } }
-      sort: { frontmatter: { priority: DESC } }
+      sort: [{ frontmatter: { priority: DESC } }, { frontmatter: { date: DESC } }, { frontmatter: { title: ASC } }]
     ) {
       nodes {
-        excerpt
-        fields {
-          slug
-        }
+        fields { slug }
         frontmatter {
-
           title
-          description
-          keywords
-          featured
-          priority
-          image {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED),
-            }
-          }
+          category
+          selected
+          date
+          image { childImageSharp { gatsbyImageData(width: 1400, aspectRatio: 1, transformOptions: { cropFocus: CENTER }, placeholder: DOMINANT_COLOR, quality: 85) } }
         }
       }
     }
   }
 `
-
-// sort: { frontmatter: { date: DESC } } // in allMarkdownRemark
-// date(formatString: "MMMM DD, YYYY") // in frontmatter

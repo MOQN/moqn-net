@@ -4,32 +4,31 @@ date: "2016-08-00, 2017-08-05, 2019-01-19"
 description: Interactive Media + Live Performance
 keywords: Interactive Installation
 image: "./images/_thumb.jpg"
+category: art
 featured: true
 priority: -1
+selected: false
 ---
+
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/EWHcW4i7lKY" title="Wings of the Isang&#x27;s New Media Performance — archived video 1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/xglnhOfC3Fw" title="Wings of the Isang&#x27;s New Media Performance — archived video 2" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/dcOQKDCJrnk" title="Wings of the Isang&#x27;s New Media Performance — archived video 3" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/xb1afM46Vbs" title="Wings of the Isang&#x27;s New Media Performance — archived video 4" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 ![Main Image](./images/_main.jpg)
 
-**Venue**: Chang-dong Platform 61, Seoul, Korea  
-**Collaboration**: Wings of the Isang  
-**Roles**: Art Direction, Visual Art & Creative Coding, Operation Direction
+Interactive media and live visuals for concerts by Wings of the Isang. The work combined prepared video, real-time graphics, and stage media control. Responsibilities included art direction, visual art and creative coding, and intermedia operation.
 
-#### Project Description
+Visual systems included Void Circle, performed live with custom software. Concert records include the 2016 and 2017 showcases and In a Moment and Eternity in 2019.
 
-Sponsored by Seoul City, a large-scale live concert was developed. Instead of a typical performance playing a music video, interaction technology and cutting-edge media were implemented. Not only were pre-made high-quality visuals controlled, but visuals like _Void Circle_ ([Link](https://www.youtube.com/watch?v=8u_lFPT48_I)) were drawn in real-time using a custom-built programming system. Additional videos can be found here: [2016 Showcase](https://www.youtube.com/playlist?list=PLSIzOgCcEvNwW_z5NVbH_PdxsjCIJzz4d) | [2017 Performance](https://www.youtube.com/playlist?list=PLSIzOgCcEvNzATRPGeZOn5UitQqi80XpG)
+## Related Videos
 
-- **Roles**: Art Direction, Visual Art & Creative Coding, Intermedia Operation Direction
-- Interactive concert combining pre-made visuals and real-time graphics.
-- Developed custom visual effects like _Void Circle_.
-- Integrated interaction technology and cutting-edge media.
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/videoseries?list=PLSIzOgCcEvNzFkMc9a-m146XACwsFxIuA" title="Wings of the Isang&#x27;s New Media Performance — &quot;In a Moment and Eternity&quot;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
 
-#### Supplemental Videos
-
-- ["In a Moment and Eternity"](https://www.youtube.com/playlist?list=PLSIzOgCcEvNzFkMc9a-m146XACwsFxIuA)
-- ["Stream of Consciousness"](https://www.youtube.com/playlist?list=PLSIzOgCcEvNwW_z5NVbH_PdxsjCIJzz4d)
-
-### Performance Images
-
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/videoseries?list=PLSIzOgCcEvNwW_z5NVbH_PdxsjCIJzz4d" title="Wings of the Isang&#x27;s New Media Performance — &quot;Stream of Consciousness&quot;" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
 ![Performance Image 1](images/image3.jpg)
 
 ![Performance Image 2](images/image8.jpg)
@@ -48,7 +47,7 @@ The interactive visuals and lighting effects were controlled in real-time.
 
 **Award**: Best Modern Rock Album Winner - _Stream of Consciousness_ by Wings of the Isang
 
-Since 2013, collaborations with the band “Wings of the Isang” have led to innovative performances, music videos, album covers, and graphic designs, culminating in this prestigious award.
+Collaboration with Wings of the Isang since 2013 has included performances, music videos, album covers, and graphic design.
 
 ![Album Cover](images/image10.jpg)  
 ![Concert Image](images/image18.jpg)

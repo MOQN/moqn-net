@@ -15,6 +15,13 @@ const projectPost = path.resolve(`./src/templates/post.js`)
  */
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
+  createPage({ path: "/about.html", component: path.resolve("./src/pages/about.js") })
+  const aliases = require("./content/project-redirects.json")
+  Object.entries(aliases).forEach(([from, to]) => createPage({
+    path: from,
+    component: path.resolve("./src/templates/project-redirect.js"),
+    context: { to },
+  }))
 
   // Get all markdown project posts sorted by date
   const result = await graphql(`
@@ -22,6 +29,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
         nodes {
           id
+          frontmatter { featured }
           fields {
             slug
           }
@@ -39,6 +47,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.allMarkdownRemark.nodes
+  const visiblePosts = posts.filter(post => post.frontmatter.featured)
 
   // Create project posts pages
   // But only if there's at least one markdown file found at "content/posts" (defined in gatsby-config.js)
@@ -46,8 +55,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   if (posts.length > 0) {
     posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+      const visibleIndex = visiblePosts.findIndex(item => item.id === post.id)
+      const previousPostId = visibleIndex > 0 ? visiblePosts[visibleIndex - 1].id : null
+      const nextPostId = visibleIndex >= 0 && visibleIndex < visiblePosts.length - 1 ? visiblePosts[visibleIndex + 1].id : null
 
       createPage({
         path: post.fields.slug,
@@ -115,6 +125,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Frontmatter {
       title: String
       description: String
+      category: String
+      selected: Boolean
       date: Date @dateformat
     }
 
@@ -122,4 +134,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
     }
   `)
+}
+
+// Gatsby's development server handles .html URLs as files before page routing.
+// Resolve explicit document URLs to their canonical page routes.
+exports.onCreateDevServer = ({ app }) => {
+  app.get(/^\/index\.html\/?$/, (_req, res) => res.redirect(302, "/"))
+  app.get(/^\/about\.html\/?$/, (_req, res) => res.redirect(302, "/about/"))
 }

@@ -1,99 +1,12 @@
-.projectBox {
-  background-color: #99F;
-  width: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
-  height: calc((var(--wrapper-maxWidth) - var(--wrapper-padding)*2 - var(--post-gap)*2)/3);
-  border-radius: var(--rounded-corner);
-  padding: var(--spacing-6);
-  text-decoration: none;
-  /* Remove underline from Link */
-  color: inherit;
-  /* Ensure text color is not overridden */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
-  /* Needed for hover effect */
-  transition: transform 0.3s ease, background-color 0.7s ease;
-  /* Smooth hover effects */
-  overflow: hidden;
-  /* Ensure child elements are contained */
-}
+.projectBox { display: block; min-width: 0; color: inherit; text-decoration: none; }
+.thumbnail { border-radius: 10px; overflow: hidden; display: block; width: 100%; aspect-ratio: 1 / 1; background: #f5f5f5; transition: opacity .25s ease; }
+.details { padding-top: 13px; }
+.details h2 { text-transform: lowercase; margin: 0; font-size: 13px; font-weight: 500; line-height: 1.4; letter-spacing: 0; }
+.details p { display: flex; justify-content: space-between; gap: 12px; margin: 4px 0 0; color: #777; font-size: 11px; line-height: 1.4; }
+.projectBox:hover .thumbnail { opacity: .86; }
+.projectBox:focus-visible { outline-offset: 6px; }
+@media (prefers-reduced-motion: reduce) { .thumbnail { transition: none; } }
 
-.projectBox:hover {
-  transform: scale(1.03);
-  /* background-color: rgb(0, 255, 191); */
-  background-color: #F99;
-  background-blend-mode: screen;
-}
-
-.projectBox::before {
-  content: "";
-  /* Creates an overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  /* Light overlay */
-  z-index: 1;
-  /* Ensure overlay appears below text */
-  border-radius: var(--rounded-corner);
-  /* Match border radius */
-  opacity: 0;
-  /* Hidden by default */
-  transition: opacity 0.7s ease;
-  /* Smooth fade effect */
-}
-
-.projectBox:hover::before {
-  opacity: 1;
-  /* Show overlay on hover */
-}
-
-.projectBox h2,
-.projectBox p {
-  text-align: left;
-  position: relative;
-  opacity: 0;
-  /* Hidden by default */
-  visibility: hidden;
-  /* Ensures it doesn't block interactions */
-  transform: translateY(10px);
-  /* Subtle downward offset */
-  transition: opacity 0.5s ease, transform 1.0s ease;
-  /* Smooth appearance */
-  z-index: 2;
-  /* Ensure text appears above the overlay */
-}
-
-.projectBox:hover h2,
-.projectBox:hover p {
-  opacity: 1;
-  /* Show text */
-  visibility: visible;
-  /* Make text interactable */
-  transform: translateY(0);
-  /* Reset position */
-}
-
-.projectBox header {
-  margin-bottom: var(--spacing-4);
-}
-
-.projectBox p {
-  margin-bottom: var(--spacing-0);
-  /* font-size: 1.2rem; */
-  color: black;
-  font-size: 0.8rem;
-  line-height: 0.9rem;
-}
-
-.projectBox h2 {
-  font-size: var(--fontSize-4);
-  margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
-  color: var(--color-primary);
-  font-size: 1.1rem;
-  line-height: 1.3rem;
-}
+.placeholder { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 28px; text-align: center; gap: 18px; }
+.placeholder span { max-width: 24ch; font-size: clamp(18px, 2vw, 28px); line-height: 1.3; letter-spacing: -.025em; color: #555; text-transform: lowercase; }
+.placeholder small { font-size: 10px; color: #888; letter-spacing: .04em; }
