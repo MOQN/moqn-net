@@ -7,17 +7,18 @@ image: "./images/_thumb.jpg"
 category: art
 featured: true
 priority: -1
+selected: false
 ---
 
 ![Main Image](./images/_main.jpg)
 
-<iframe width="800" height="450" src="//www.youtube.com/embed/uNYBruk-A10?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<iframe loading="lazy" title="Thread Screen Simulation — video" width="800" height="450" src="https://www.youtube.com/embed/uNYBruk-A10?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 
 A simulator developed during an internship at BREAKFAST for an installation using rotating colored ribbons. Images are mapped to ribbon positions, with each simulated thread representing a pixel.
 
 The openFrameworks simulator was used to test transitions and physical parameters, including rotation speed, before the installation was built.
 
-<iframe width="800" height="450" src="//www.youtube.com/embed/u5NLGrD3KNc?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<iframe loading="lazy" title="Thread Screen Simulation — video" width="800" height="450" src="https://www.youtube.com/embed/u5NLGrD3KNc?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 
 ![Image](./images/thread-screen-02.png)
 
@@ -27,7 +28,7 @@ The openFrameworks simulator was used to test transitions and physical parameter
 
 ## Original Installation
 
-<iframe width="800" height="450" src="//www.youtube.com/embed/8xhWB2HWbV0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<iframe loading="lazy" title="Thread Screen Simulation — video" width="800" height="450" src="https://www.youtube.com/embed/8xhWB2HWbV0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 
 Link to the project: [Thread Screen](https://www.breakfastny.com/work/thread-screen)
 

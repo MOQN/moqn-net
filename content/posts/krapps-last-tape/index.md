@@ -7,9 +7,12 @@ priority: -10
 documentationStatus: "documented"
 date: "2012-09"
 image: "./images/01.jpg"
+selected: false
 ---
 
 Production assistance for Romy Achituv’s Krapp’s Last Tape. Work included pump automation, circuit assembly, a servo-driven container mechanism, limit-switch programming, carpentry, staining, CRT disassembly, and supplier coordination.
+
+<iframe width="1120" height="630" src="https://player.vimeo.com/video/57201828" title="Krapp’s Last Tape — archived video 1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 ![Krapp’s Last Tape — image 1](./images/01.jpg)
 

@@ -1,12 +1,13 @@
 ---
 title: "OVOCO & Marchak Launching Show"
 description: "Media Installation"
-category: "art"
+category: prev
 featured: true
 priority: -10
 documentationStatus: "documented"
 date: "2010-06"
 image: "./images/01.jpg"
+selected: false
 ---
 
 Art direction for a media installation at the OVOCO & Marchak Jewelry Gallery. Moving images brought together jewelry sketches and designs for the launching show.
@@ -23,4 +24,4 @@ Art direction for a media installation at the OVOCO & Marchak Jewelry Gallery. M
 
 ![OVOCO & Marchak Launching Show — image 6](./images/06.jpg)
 
-- [Video](https://vimeo.com/35381658)
+<iframe width="1120" height="630" src="https://player.vimeo.com/video/35381658" title="OVOCO &amp; Marchak Launching Show — Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>

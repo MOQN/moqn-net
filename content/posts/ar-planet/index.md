@@ -1,12 +1,13 @@
 ---
 title: "AR Planet"
 description: "Augmented Reality — Technical Collaboration"
-category: "code"
+category: prev
 featured: true
 priority: -10
 documentationStatus: "documented"
 date: "2011-08"
 image: "./images/01.jpg"
+selected: false
 ---
 
 Technical support and programming for AR Planet by Youjin Yoon. The implementation used Flash AS3 and FLARToolKit 2.5.4 with visual markers.
@@ -23,4 +24,4 @@ Technical support and programming for AR Planet by Youjin Yoon. The implementati
 
 ![AR Planet — image 6](./images/06.jpg)
 
-- [Video](https://www.youtube.com/watch?v=_7r88Q49MEU)
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/_7r88Q49MEU" title="AR Planet — Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>

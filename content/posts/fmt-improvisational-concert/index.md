@@ -7,11 +7,12 @@ image: "./images/_thumb.jpg"
 category: art
 featured: true
 priority: 7
+selected: false
 ---
 
 ![Main Image](./images/_main.jpg)
 
-<iframe width="800" height="450" src="//www.youtube.com/embed/WxhK6FOfil4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<iframe loading="lazy" title="Feng Mantian&#x27;s Moon Guitar Live Concert — video" width="800" height="450" src="https://www.youtube.com/embed/WxhK6FOfil4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 
 ## Role
 

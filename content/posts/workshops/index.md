@@ -7,6 +7,7 @@ image: "./images/_thumb.jpg"
 category: education
 featured: false
 priority: 5
+selected: false
 ---
 
 - [Improvisational Drawing & Performance Workshop](/improvisational-drawing-2019/)

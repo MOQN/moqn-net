@@ -6,11 +6,13 @@ featured: true
 priority: -10
 documentationStatus: "pending"
 image: "./images/01.jpg"
+date: "2013-04"
+selected: false
 ---
 
-The project archive contains photographs of an illuminated exterior display. The original project description and credits are not present in the surviving page.
+Work for the PanPacific building in Seoul included LED media content, an LED manager, and weather and clock content using RSS feeds, recorded in April 2013.
 
-<p class="archive-note">Further documentation pending.</p>
+The photographs document the exterior LED display.
 
 ![Panpacific — image 1](./images/01.jpg)
 

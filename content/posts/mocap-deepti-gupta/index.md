@@ -6,9 +6,10 @@ image: "./images/deepti-001.jpg"
 category: education
 featured: true
 priority: 3
+selected: false
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hRj4mMm5CDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe loading="lazy" title="Motion Capture Exploration with Deepti Gupta — video" width="560" height="315" src="https://www.youtube.com/embed/hRj4mMm5CDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - Collaboration with Deepti Gupta, a traditional Indian dance choreographer.
 - Integrated motion capture tools:

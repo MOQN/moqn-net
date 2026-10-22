@@ -7,7 +7,8 @@ image: "./images/_thumb.jpg"
 category: art
 featured: false
 priority: -1
+selected: false
 ---
 
-- [Ash and Hush](/ash-and-hush/)
+- [Husk and Ash](/ash-and-hush/)
 - [Krapp’s Last Tape](/krapps-last-tape/)

@@ -1,17 +1,22 @@
 ---
 title: "The Feast of Space — IAC 2009"
 description: "Digital Performance & Physical Computing"
-category: "art"
+category: prev
 featured: true
 priority: -10
 documentationStatus: "documented"
 date: "2009-10"
 image: "./images/01.jpg"
+selected: false
 ---
 
 Technical coordination for the opening digital performance of the 60th International Astronautical Congress. The production included a six-meter Digital HonCheonUi sculpture, 16 robotic percussion instruments, and wearable LED devices.
 
 Work included leading 14 student volunteers, installing and programming robotic percussion with Processing, and programming four lighting patterns for Arduino-based wearable devices.
+
+![The Feast of Space — IAC 2009 — archive documentation](./images/archive-8b9360b5cc1a.jpg)
+
+![The Feast of Space — IAC 2009 — archive documentation](./images/archive-8b754e982652.jpg)
 
 ![The Feast of Space — IAC 2009 — image 1](./images/01.jpg)
 
@@ -33,4 +38,4 @@ Work included leading 14 student volunteers, installing and programming robotic 
 
 ![The Feast of Space — IAC 2009 — image 10](./images/10.jpg)
 
-- [Video](https://vimeo.com/8205678)
+<iframe width="1120" height="630" src="https://player.vimeo.com/video/8205678" title="The Feast of Space — IAC 2009 — Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>

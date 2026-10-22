@@ -6,6 +6,7 @@ image: "./images/improv-2019-001.jpg"
 category: education
 featured: true
 priority: 5
+selected: true
 ---
 
 A workshop project connecting drawing, body movement, and visual media at the Shanghai Improvisation Festival. Traditional and VR drawing methods were used alongside a custom drawing application and motion tracking.

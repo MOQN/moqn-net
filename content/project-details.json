@@ -200,7 +200,6 @@
       "value": "CELL Lighting"
     }
   ],
-  "/generative-code-studies/": [],
   "/cheonggyecheon-projection/": [
     {
       "label": "venue",
@@ -227,28 +226,39 @@
       "value": "Chang Kwang Hyo"
     }
   ],
-  "/gift/": [],
-  "/panpacific/": [],
-  "/nabi-hackathon/": [],
-  "/pong/": [],
-  "/equilateral/": [],
-  "/pinlight/": [],
-  "/interaction-interface-research/": [],
-  "/nemo-london/": [],
-  "/digi-muse-festival/": [
+  "/gift/": [
     {
       "label": "venue",
-      "value": "Cadillac Shanghai Concert Hall, China"
+      "value": "Jangcheon Art Hall, Seoul, Korea"
     }
   ],
-  "/in-a-moment-and-eternity/": [
+  "/panpacific/": [
     {
       "label": "venue",
-      "value": "Platform 61, Seoul, Korea"
+      "value": "PanPacific building, Seoul, Korea"
+    }
+  ],
+  "/nabi-hackathon/": [],
+  "/pong/": [
+    {
+      "label": "venue",
+      "value": "ITP Big Screens, IAC, New York, US"
+    }
+  ],
+  "/equilateral/": [
+    {
+      "label": "role",
+      "value": "Created by MOQN"
     },
     {
       "label": "collaborators",
-      "value": "Wings of the Isang"
+      "value": "Xiaoxaio Wang, Yachao Zhu, Hongyu Guo (dance); JungMin Moon (sound design); Julia Irwin (conceptual development)"
+    }
+  ],
+  "/pinlight/": [
+    {
+      "label": "venue",
+      "value": "DaVinci Idea, Geumcheon Art Space, Seoul, Korea"
     }
   ],
   "/embodied-cosmopolitanism/": [
@@ -259,6 +269,10 @@
     {
       "label": "tools",
       "value": "openFrameworks"
+    },
+    {
+      "label": "collaborators",
+      "value": "Hyunju Lee Dance Company, Hyuns Hong, JungHyun Moon, Eddy Kim, Laban Movers"
     }
   ],
   "/genai-research-teaching/": [
@@ -268,34 +282,10 @@
     }
   ],
   "/movement-becomes-dialogue/": [],
-  "/multisensory-digital-performance/": [
-    {
-      "label": "venue",
-      "value": "Symposium on Heritage in the Digital Age, NYU Shanghai, China"
-    }
-  ],
-  "/opening-discussion-generative-ai/": [
-    {
-      "label": "venue",
-      "value": "NYU Global Show & Tell"
-    }
-  ],
-  "/make-ai-more-accessible/": [
-    {
-      "label": "venue",
-      "value": "NYU Global Show & Tell"
-    }
-  ],
   "/machine-learning-tools-rosso/": [
     {
       "label": "venue",
       "value": "Rosso, China"
-    }
-  ],
-  "/reinterpreting-movement-di-jam/": [
-    {
-      "label": "venue",
-      "value": "DI JAM, College of Design and Innovation, Tongji University"
     }
   ],
   "/nasa-space-apps/": [
@@ -306,14 +296,28 @@
   ],
   "/ash-and-hush/": [
     {
+      "label": "venue",
+      "value": "Across, Hongik Museum of Art, Seoul, Korea"
+    },
+    {
       "label": "collaborators",
       "value": "Romy Achituv"
     }
   ],
   "/krapps-last-tape/": [
     {
+      "label": "venue",
+      "value": "Media City Seoul Biennale — Spell on You, Seoul Museum of Art, Korea"
+    },
+    {
       "label": "collaborators",
       "value": "Romy Achituv"
+    }
+  ],
+  "/lac/": [
+    {
+      "label": "organization",
+      "value": "Live Arts Collaborative (LAC)"
     }
   ]
 }

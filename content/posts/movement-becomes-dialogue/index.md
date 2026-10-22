@@ -6,6 +6,7 @@ category: education
 featured: true
 priority: -5
 documentationStatus: pending
+selected: false
 ---
 
 A project presented through workshops, a dialogue, and a conference presentation between 2024 and 2026. Its recorded titles address movement, human and machine perspectives, choreography, and creative-practice pedagogy.

@@ -1,15 +1,36 @@
 ---
-title: "Ash and Hush"
+title: "Husk and Ash"
 description: "Installation — Production Assistance"
 category: "art"
 featured: true
 priority: -10
 documentationStatus: "documented"
-date: "2013"
+date: "2013-07-05"
 image: "./images/01.jpg"
+selected: false
 ---
 
 Production assistance for Romy Achituv’s installation. The existing archive documents the work and its fabrication process.
+
+![Ash and Hush — archive documentation](./images/archive-2e2f635482e2.jpg)
+
+![Ash and Hush — archive documentation](./images/archive-aa4af53cefee.jpg)
+
+![Ash and Hush — archive documentation](./images/archive-36d92a57a819.jpg)
+
+![Ash and Hush — archive documentation](./images/archive-cc6056ca5e65.jpg)
+
+![Ash and Hush — archive documentation](./images/archive-08a2c55c1dbf.jpg)
+
+![Ash and Hush — archive documentation](./images/archive-42c99db04f44.jpg)
+
+![Ash and Hush — archive documentation](./images/archive-98af3fe99f74.jpg)
+
+![Ash and Hush — archive documentation](./images/archive-b5578de6715b.jpg)
+
+![Ash and Hush — archive documentation](./images/archive-0a4aa51ef290.jpg)
+
+<iframe width="1120" height="630" src="https://player.vimeo.com/video/83819049" title="Ash and Hush — archived video 1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 ![Ash and Hush — image 1](./images/01.jpg)
 

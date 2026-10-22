@@ -1,12 +1,13 @@
 ---
 title: "Sony, Meets Design — RED"
 description: "Exhibition — Technical & Conceptual Support"
-category: "art"
+category: prev
 featured: true
 priority: -10
 documentationStatus: "documented"
 date: "2006-11"
 image: "./images/01.jpg"
+selected: false
 ---
 
 Technical and conceptual support for fashion designer Chang Kwang Hyo’s RED section in the exhibition Sony, Meets Design.

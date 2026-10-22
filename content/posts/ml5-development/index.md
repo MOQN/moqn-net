@@ -7,6 +7,7 @@ image: "./images/_thumb.jpg"
 category: code
 featured: true
 priority: 6
+selected: true
 ---
 
 Website development and pedagogical development for ml5.js, an open-source JavaScript machine-learning library. The ongoing work includes the website, beginner-facing documentation, example sketches, and API contributions.

@@ -2,13 +2,13 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 const Layout = ({ location, children }) => (
-  <div className={`global-wrapper${location?.pathname?.replace(/\/$/, "") === "/work" ? " work-page" : ""}`} id="top">
+  <div className={`global-wrapper${["", "/index.html", "/work"].includes(location?.pathname?.replace(/\/$/, "")) ? " work-page" : ""}`} id="top">
     <a className="skip-link" href="#main-content">Skip to content</a>
     <header className="global-header">
       <Link className="site-wordmark" to="/" aria-label="moqn home">moqn</Link>
       <nav aria-label="Main navigation">
-        <Link to="/work/" activeClassName="active">[ Work ]</Link>
-        <Link to="/" activeClassName="active" className={location?.pathname === "/about/" ? "active" : undefined}>[ About ]</Link>
+        <Link to="/" activeClassName="active">[ Work ]</Link>
+        <Link to="/about/" activeClassName="active">[ About ]</Link>
       </nav>
     </header>
     <main id="main-content">{children}</main>

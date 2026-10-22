@@ -1,17 +1,18 @@
 ---
 title: Melodic Echo Odyssey
-date: "2024-04-17 to 2024-04-18" # YYYY-MM-DD or YYYY-MM-DD to YYYY-MM-DD or YYYY-MM-DD, YYYY-MM-DD, YYYY-MM-DD
+date: "2024-04-17 to 2024-04-18, 2026-05"
 description: AI Narrative Concert
 keywords: AI-Generated Visuals, AI-Generated Music, Real-time Motion Tracking, Robot Arm
 image: "./images/_thumb.jpg"
 category: art
 featured: true
 priority: 9
+selected: true
 ---
 
 ![Main Image](./images/_main.jpg)
 
-Melodic Echo Odyssey is a narrative concert combining Pingtan, AI-generated imagery and music, live media processing, and a robotic arm. It was presented at Shanghai Concert Hall on April 17–18, 2024.
+Melodic Echo Odyssey is a narrative concert combining Pingtan, AI-generated imagery and music, live media processing, and a robotic arm. It was presented at Shanghai Concert Hall on April 17–18, 2024. The project was also presented at Digi Muse Festival at Cadillac Shanghai Concert Hall in May 2026.
 
 ## Role
 
@@ -21,7 +22,7 @@ Work included media and technology operation, interactive-system development, in
 
 Robotic-arm movements were prepared in Rhino and triggered during the performance. Computer vision, generative media, and pre-programmed robotic movement were integrated with live processing.
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/Jy67K_ND3QQ" frameborder="0" allowfullscreen></iframe>
+<iframe loading="lazy" title="Melodic Echo Odyssey — video" width="800" height="450" src="https://www.youtube.com/embed/Jy67K_ND3QQ" frameborder="0" allowfullscreen></iframe>
 
 ![Image](./images/melodic-echo-odyssey-002.jpg)
 

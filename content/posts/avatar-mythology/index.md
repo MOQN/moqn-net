@@ -7,6 +7,7 @@ image: "./images/_thumb.jpg"
 category: art
 featured: true
 priority: 10
+selected: true
 ---
 
 ![Main Image](./images/_main.jpg)
@@ -15,9 +16,9 @@ A new-media dance performance presented in the 2019 China Shanghai International
 
 The performance combines choreography with digital figures that respond to the dancers’ movements. Media-art work included creature design, software and interface development, live visual control, and stage-layout planning.
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/Wl_59HQjO3M" frameborder="0" allowfullscreen></iframe>
+<iframe loading="lazy" title="Avatar · Mythology — video" width="800" height="450" src="https://www.youtube.com/embed/Wl_59HQjO3M" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/mPm63bvD778" frameborder="0" allowfullscreen></iframe>
+<iframe loading="lazy" title="Avatar · Mythology — video" width="800" height="450" src="https://www.youtube.com/embed/mPm63bvD778" frameborder="0" allowfullscreen></iframe>
 
 ## Concept
 

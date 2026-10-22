@@ -7,6 +7,7 @@ image: "./images/_thumb.jpg"
 category: art
 featured: true
 priority: 8
+selected: true
 ---
 
 ![Main Image](./images/_main.jpg)

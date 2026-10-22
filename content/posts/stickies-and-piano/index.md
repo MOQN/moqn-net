@@ -1,12 +1,13 @@
 ---
 title: "Stickies & Piano"
 description: "Multi-touch Applications"
-category: "code"
+category: prev
 featured: true
 priority: -10
 documentationStatus: "documented"
 date: "2010-07"
 image: "./images/01.jpg"
+selected: false
 ---
 
 Two applications demonstrate a multi-touch system using an interior wall for Stickies and a table for Piano. Work included graphic design and Processing programming with serial communication.
@@ -23,4 +24,4 @@ The Piano application uses the SoundCipher library to play chords from simultane
 
 ![Stickies & Piano — image 5](./images/05.jpg)
 
-- [Video](https://vimeo.com/35381291)
+<iframe width="1120" height="630" src="https://player.vimeo.com/video/35381291" title="Stickies &amp; Piano — Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>

@@ -1,15 +1,18 @@
 ---
 title: "Being MASTER"
 description: "Kinetic Sculpture — Technical Collaboration"
-category: "art"
+category: prev
 featured: true
 priority: -10
 documentationStatus: "documented"
 date: "2010-09"
 image: "./images/01.jpg"
+selected: false
 ---
 
 Technical support for Park Jong Young’s kinetic sculptures. Motion tracking controls the direction of a sculpture’s eyes, and sound input triggers the movement of an ear. The interaction was developed with Processing and Arduino.
+
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/4Py8nRbzZpk" title="Being MASTER — archived video 1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 ![Being MASTER — image 1](./images/01.jpg)
 

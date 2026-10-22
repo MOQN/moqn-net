@@ -6,11 +6,35 @@ featured: true
 priority: -10
 documentationStatus: "pending"
 image: "./images/01.jpg"
+date: "2013-07-05"
+selected: false
 ---
 
-Photographs from the archived project folder Gift. The surviving images document a stage production with projected visual material.
+Gift is recorded as a hybrid musical presented at Jangcheon Art Hall, Seoul, on July 5, 2013.
 
-<p class="archive-note">Further documentation pending.</p>
+Stage documentation shows projected visual material used in the production.
+
+![Gift — archive documentation](./images/archive-c732ace443a7.jpg)
+
+![Gift — archive documentation](./images/archive-e6c6fe6e9165.jpg)
+
+![Gift — archive documentation](./images/archive-e330c15ed326.jpg)
+
+![Gift — archive documentation](./images/archive-5edcdb1dbcf2.jpg)
+
+![Gift — archive documentation](./images/archive-907e32e38906.jpg)
+
+![Gift — archive documentation](./images/archive-127312a9b398.jpg)
+
+![Gift — archive documentation](./images/archive-ebd084b807c3.jpg)
+
+![Gift — archive documentation](./images/archive-836706da72fd.jpg)
+
+![Gift — archive documentation](./images/archive-a08c5368ec1d.jpg)
+
+![Gift — archive documentation](./images/archive-b6931e716e83.jpg)
+
+![Gift — archive documentation](./images/archive-b722bdc85162.jpg)
 
 ![Gift — image 1](./images/01.jpg)
 

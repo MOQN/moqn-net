@@ -1,12 +1,13 @@
 ---
 title: "ThisAbility"
 description: "Exhibition — Technical Coordination"
-category: "art"
+category: prev
 featured: true
 priority: -10
 documentationStatus: "documented"
 date: "2009"
 image: "./images/01.jpg"
+selected: false
 ---
 
 Technical coordination for an international new-media exhibition at CAFA Art Museum. Work included assisting 20 artists with installation, electrical wiring, arranging works, and graphic design for banners and the guidebook.

@@ -15,6 +15,7 @@ const projectPost = path.resolve(`./src/templates/post.js`)
  */
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
+  createPage({ path: "/about.html", component: path.resolve("./src/pages/about.js") })
   const aliases = require("./content/project-redirects.json")
   Object.entries(aliases).forEach(([from, to]) => createPage({
     path: from,
@@ -125,6 +126,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       category: String
+      selected: Boolean
       date: Date @dateformat
     }
 
@@ -132,4 +134,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
     }
   `)
+}
+
+// Gatsby's development server handles .html URLs as files before page routing.
+// Resolve explicit document URLs to their canonical page routes.
+exports.onCreateDevServer = ({ app }) => {
+  app.get(/^\/index\.html\/?$/, (_req, res) => res.redirect(302, "/"))
+  app.get(/^\/about\.html\/?$/, (_req, res) => res.redirect(302, "/about/"))
 }
